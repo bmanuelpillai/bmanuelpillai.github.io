@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction to Functional Programming</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Include the Navigation Menu -->
+  <header>
+    <h1>Introduction to Functional Programming</h1>
+    <p>Working with Functions and Packages in R</p>
+    <!-- Include the menu -->
+    <nav>
+      <ul>
+        <li><a href="index.html">The Whole Game</a></li>
+        <li><a href="git.html">Git and GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Level 1 Content -->
+  <div class="level" id="level-1">
+    <div class="level-header" onclick="toggleLevel(1)">
+      <div class="level-number">1</div>
+      <h2 class="level-title">Getting Started with Functions in R</h2>
+    </div>
+    <div class="level-content active">
+      <p>Control Flow</p>
+
+      <!-- If...Else Control Flow Boiler Plate Code -->
+      <div class="path-option">
+        <h4>If...Else Control Flow Boiler Plate Code</h4>
+        <p>
+          if (condition is true) {<br>
+          &nbsp;&nbsp;perform action<br>
+          } else {<br>
+          &nbsp;&nbsp;# that is, if the condition is false,<br>
+          &nbsp;&nbsp;perform alternative action<br>
+          }
+        </p>
+      </div>
+
+      <!-- If...Else Control Flow Example -->
+      <div class="path-option">
+        <h4>If...Else Control Flow Example</h4>
+        <p>
+          x <- 8<br>
+            if (x >= 10) {<br>
+            &nbsp;&nbsp;print("x is greater than or equal to 10")<br>
+            } else if (x > 5) {<br>
+            &nbsp;&nbsp;print("x is greater than 5, but less than 10")<br>
+            } else {<br>
+            &nbsp;&nbsp;print("x is less than 5")<br>
+            }
+        </p>
+
+        <p>More information on Loops can be found <a
+            href="https://american-stat-412612.netlify.app/material/1-13-lecture/" target="_blank">here</a>.</p>
+      </div>
+
+      <a href="#level-2" class="btn" onclick="activateLevel(2)">Next Level →</a>
+    </div>
+  </div>
+
+  <!-- Level 2 Content -->
+  <div class="level" id="level-2">
+    <div class="level-header" onclick="toggleLevel(2)">
+      <div class="level-number">2</div>
+      <h2 class="level-title">Functions</h2>
+    </div>
+    <div class="level-content">
+      <p><b>Q. Why use functions when you can just copy and paste your code?</b></p>
+      <p>A. Repeating yourself makes it more likely that you make a mistake while coding. Constantly repeating your code
+        will make your scripts very long and hard for others to read and debug. Writing functions will also make it
+        easier for you to reuse code that you wrote before.</p>
+
+      <!-- Function Example -->
+      <div class="path-option">
+        <h4>Example</h4>
+        <p>
+          <b>Define function:</b><br>
+          fahr_to_kelvin <- function(temp) {<br>
+            &nbsp;&nbsp;kelvin <- ((temp - 32) * (5 / 9)) + 273.15<br>
+              &nbsp;&nbsp;return(kelvin)<br>
+              }<br>
+              <b>Call function:</b><br>
+              fahr_to_kelvin(32)
+        </p>
+      </div>
+
+      <!-- Advanced Function Usage -->
+      <div class="path-option">
+        <h4>Advanced Function Usage</h4>
+        <p>
+          You can do more advanced things with functions like piping one function into another:<br>
+          Example:<br>
+          fahr_to_kelvin(32) |> kelvin_to_celsius()
+        </p>
+      </div>
+
+      <p>More information on Functions can be found <a
+          href="https://jcoliver.github.io/learn-r/007-intro-functional-programming.html" target="_blank">here</a>.</p>
+
+      <a href="#level-3" class="btn" onclick="activateLevel(3)">Next Level →</a>
+    </div>
+  </div>
+
+  <!-- Level 3 Content -->
+  <div class="level" id="level-3">
+    <div class="level-header" onclick="toggleLevel(3)">
+      <div class="level-number">3</div>
+      <h2 class="level-title">Loops</h2>
+    </div>
+    <div class="level-content active">
+      <p>Say you have a function and want to apply it to more than one thing, what do you do?</p>
+
+      <!-- Level 3 Steps -->
+      <div class="path-option">
+        <h4>Steps</h4>
+        <p>1. Define the Function<br>
+          2. Define a vector you want to apply the function to<br>
+          3. Use `map()` to apply the function to each element in the vector
+        </p>
+      </div>
+
+      <!-- Level 3 Example -->
+      <div class="path-option">
+        <h4>Example</h4>
+        <p>
+          square <- function(x) { return(x * x) }<br>
+            # Create a vector of numbers<br>
+            vector1 <- c(2, 4, 5, 6)<br>
+              # Using map() function to generate squares<br>
+              map(vector1, square)
+        </p>
+      </div>
+    </div>
+    <div class="level" id="level-4">
+      <div class="level-header" onclick="toggleLevel(4)">
+        <div class="level-number">1</div>
+        <h2 class="level-title">Level 2: Working with Packages</h2>
+    </div>
+    <div class="level-content active">
+      <p>Control Flow</p>
+
+      <!-- Working With Packages-->
+      <div class="path-option">
+        <h4>Working with Packages</h4>
+        <p>Now you have a bunch of related functions that you keep on using in
+        a workflow. It is very convenient to put all of these functions into a
+        package, where you can group them together, document their
+        function for other users, and write tests.
+
+        Writing your own packages is a pretty advanced topic, but I
+        recommend starting with [Hadley Wickham's R package's book](https://r-pkgs.org/whole-game.html).
+
+        Which covers everything from creating a package directory, writing tests, documenting functions, and publishing your
+        package on CRAN.
+</p>
+      </div>
+
+
+
+    </div>
+  </div>
+  </div>
+
+  <!-- Link to External JavaScript File -->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
