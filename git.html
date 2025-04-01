@@ -9,22 +9,26 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
-
-
 <body>
     <header>
-        <h1>Learning Git and GitHub</h1>
+        <h1>Version Control your Code</h1>
+        <h3>Learning Git and GitHub</h3>
         <!-- Include the menu -->
-        <nav>
+        <nav aria-label="Main Navigation">
             <ul>
-                <li><a href="index.html">The Whole Game</a></li>
-                <li><a href="git.html">Git and GitHub</a></li>
+                <li><a href="index.html">Big Picture</a></li>
+                <li><a href="functional_programming.html">Functional Programming in R</a></li>
+                <li><a href="debugging.html">Debugging in R</a></li>
+                <li><a href="git.html">Version Control using Git</a></li>
+                <li><a href="cli.html">Get Fast with CLI</a></li>
             </ul>
         </nav>
+
     </header>
 
-    <p style="font-size: 1.5rem; font-weight: bold;">4 Levels of Version Control</p>
-    </header>
+    <div style="text-align: center;">
+        <h1>4 Levels of Version Control</h1>
+    </div>
 
     <div class="level" id="level-1">
         <div class="level-header" onclick="toggleLevel(1)">
@@ -105,27 +109,30 @@
                 a repository that you can use to try out changes to your code before adding them to your existing code.
             </p>
 
-            <h3>Creating and Using Branches</h3>
-            <ol>
-                <li>In GitHub Desktop, click "Branch" in the top menu</li>
-                <li>Select "New Branch" and give it a name</li>
-                <li>Make your changes in this branch</li>
-                <li>Commit the changes to the branch</li>
-                <li>Push the branch to GitHub</li>
-            </ol>
-
+            <div class="path-option">
+                <h3>Creating and Using Branches</h3>
+                <ol>
+                    <li>In GitHub Desktop, click "Branch" in the top menu</li>
+                    <li>Select "New Branch" and give it a name</li>
+                    <li>Make your changes in this branch</li>
+                    <li>Commit the changes to the branch</li>
+                    <li>Push the branch to GitHub</li>
+                </ol>
+            </div>
             <p>Once the changes you make to the new branch look good, you can merge those changes into your main branch.
                 This is especially useful when you are working with other people and each want to make changes to code
                 and then combine them together.</p>
 
 
-            <ul>
-                <li class="bullet-item">Create a new branch</li>
-                <li class="bullet-item">Commit changes to a branch</li>
-                <li class="bullet-item">Push changes to GitHub</li>
-                <li class="bullet-item">Merge a branch into main</li>
-            </ul>
-
+            <div class="path-option">
+                <h3>Pulling changes from a feature branch into the main branch</h3>
+                <ol>
+                    <li>Create a new branch</li>
+                    <li>Commit changes to a branch</li>
+                    <li>Push changes to GitHub</li>
+                    <li>Merge a branch into main using a Pull Request</li>
+                </ol>
+            </div>
             <a href="#level-3" class="btn" onclick="activateLevel(3)">Next Level →</a>
         </div>
     </div>
@@ -167,12 +174,6 @@
                     to your code, as well as opens up a bunch of advanced features that are a bit harder using GitHub
                     Desktop.</p>
             </div>
-
-            <ul>
-                <li class="bullet-item">Create a .gitignore file</li>
-                <li class="bullet-item">Try rebasing instead of merging</li>
-                <li class="bullet-item">Use Git in the terminal</li>
-            </ul>
 
             <a href="#level-4" class="btn" onclick="activateLevel(4)">Next Level →</a>
         </div>
@@ -216,64 +217,14 @@
                     GitHub actions go along with pull requests and are used to run tests prior to merging a branch.</p>
             </div>
 
-            <ul>
-                <li class="bullet-item">Set up pre-commit hooks</li>
-                <li class="bullet-item">Create a pull request</li>
-                <li class="bullet-item">Set up a GitHub Action</li>
-            </ul>
-
             <a href="#" class="btn" onclick="activateLevel(1)">Back to Level 1</a>
         </div>
     </div>
     </div>
 
-    <script>
-        // Toggle level content visibility
-        function toggleLevel(levelNum) {
-            const content = document.querySelector(`#level-${levelNum} .level-content`);
-            content.classList.toggle('active');
-        }
 
-        // Activate a specific level
-        function activateLevel(levelNum) {
-            // Hide all level contents
-            document.querySelectorAll('.level-content').forEach(content => {
-                content.classList.remove('active');
-            });
-
-            // Show the target level content
-            document.querySelector(`#level-${levelNum} .level-content`).classList.add('active');
-
-            // Update progress steps
-            document.querySelectorAll('.progress-step').forEach(step => {
-                if (parseInt(step.dataset.level) <= levelNum) {
-                    step.classList.add('active');
-                } else {
-                    step.classList.remove('active');
-                }
-            });
-
-            // Update progress bar
-            updateProgressBar(levelNum);
-
-            // Scroll to the level
-            document.querySelector(`#level-${levelNum}`).scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-
-        // Update progress bar based on active level
-        function updateProgressBar(levelNum) {
-            const totalLevels = 4;
-            const progressPercentage = ((levelNum - 1) / (totalLevels - 1)) * 100;
-            document.getElementById('progress-bar').style.width = `${progressPercentage}%`;
-        }
-
-        // Initialize
-        document.addEventListener('DOMContentLoaded', function () {
-            activateLevel(1);
-        });
-    </script>
+    <!-- Link to External JavaScript File -->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

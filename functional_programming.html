@@ -13,25 +13,27 @@
   <!-- Include the Navigation Menu -->
   <header>
     <h1>Introduction to Functional Programming</h1>
-    <p>Working with Functions and Packages in R</p>
+    <h3>Working with Functions and Packages in R</h3>
     <!-- Include the menu -->
-    <nav>
+    <nav aria-label="Main Navigation">
       <ul>
-        <li><a href="index.html">The Whole Game</a></li>
-        <li><a href="git.html">Git and GitHub</a></li>
+        <li><a href="index.html">Big Picture</a></li>
+        <li><a href="functional_programming.html">Functional Programming in R</a></li>
+        <li><a href="debugging.html">Debugging in R</a></li>
+        <li><a href="git.html">Version Control using Git</a></li>
+        <li><a href="cli.html">Get Fast with CLI</a></li>
       </ul>
     </nav>
+
   </header>
 
   <!-- Level 1 Content -->
   <div class="level" id="level-1">
     <div class="level-header" onclick="toggleLevel(1)">
       <div class="level-number">1</div>
-      <h2 class="level-title">Getting Started with Functions in R</h2>
+      <h2 class="level-title">Control Flow in R</h2>
     </div>
     <div class="level-content active">
-      <p>Control Flow</p>
-
       <!-- If...Else Control Flow Boiler Plate Code -->
       <div class="path-option">
         <h4>If...Else Control Flow Boiler Plate Code</h4>
@@ -71,7 +73,7 @@
   <div class="level" id="level-2">
     <div class="level-header" onclick="toggleLevel(2)">
       <div class="level-number">2</div>
-      <h2 class="level-title">Functions</h2>
+      <h2 class="level-title">Why Use Functions</h2>
     </div>
     <div class="level-content">
       <p><b>Q. Why use functions when you can just copy and paste your code?</b></p>
@@ -140,28 +142,31 @@
         </p>
       </div>
     </div>
-    <div class="level" id="level-4">
-      <div class="level-header" onclick="toggleLevel(4)">
-        <div class="level-number">1</div>
-        <h2 class="level-title">Level 2: Working with Packages</h2>
+    <a href="#level-2" class="btn" onclick="activateLevel(2)">Next Level →</a>
+  </div>
+  <div class="level" id="level-4">
+    <div class="level-header" onclick="toggleLevel(4)">
+      <div class="level-number">4</div>
+      <h2 class="level-title">Level 2: Working with Packages</h2>
     </div>
     <div class="level-content active">
-      <p>Control Flow</p>
+      <h4>Using Devtools</h4>
 
       <!-- Working With Packages-->
       <div class="path-option">
         <h4>Working with Packages</h4>
         <p>Now you have a bunch of related functions that you keep on using in
-        a workflow. It is very convenient to put all of these functions into a
-        package, where you can group them together, document their
-        function for other users, and write tests.
+          a workflow. It is very convenient to put all of these functions into a
+          package, where you can group them together, document their
+          function for other users, and write tests.
 
-        Writing your own packages is a pretty advanced topic, but I
-        recommend starting with [Hadley Wickham's R package's book](https://r-pkgs.org/whole-game.html).
+          Writing your own packages is a pretty advanced topic, but I
+          recommend starting with [Hadley Wickham's R package's book](https://r-pkgs.org/whole-game.html).
 
-        Which covers everything from creating a package directory, writing tests, documenting functions, and publishing your
-        package on CRAN.
-</p>
+          Which covers everything from creating a package directory, writing tests, documenting functions, and
+          publishing your
+          package on CRAN.
+        </p>
       </div>
 
 

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Debugging in R</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Include the Navigation Menu -->
+  <header>
+    <h1>Debugging in R</h1>
+    <h3>Squash bugs fast</h3>
+    <!-- Include the menu -->
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="index.html">Big Picture</a></li>
+        <li><a href="functional_programming.html">Functional Programming in R</a></li>
+        <li><a href="debugging.html">Debugging in R</a></li>
+        <li><a href="git.html">Version Control using Git</a></li>
+        <li><a href="cli.html">Get Fast with CLI</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <!-- Importance of Debugging -->
+  <h3>Learn to Debug R code</h3>
+  <div>
+    <p>Debugging code is one of the most important skills after you start
+      writing your own functions. Developing the skill of debugging takes
+      time but here are some starting places I recommend.
+      Some recommended reading in <a href="https://adv-r.hadley.nz/debugging.html" target="_blank">Hadley Wickham's
+        Advanced R book</a></p>
+  </div>
+
+  <!-- Debugging Functions -->
+  <div>
+    <h3>Debugging Functions</h3>
+    <ul>
+      <li><b>browser()</b>
+        <p>Put this in the body of your function, and it will pause its exectuion allowing you to interactively step
+          through your function</p>
+      </li>
+      <li><b>debug()</b>
+        <p>stops a function from executing automatically and allows you to execute one statement at a time</p>
+      </li>
+      <li><b>print("")</b>
+        <p>print statements are useful to pin down where you are in during a function's execution</p>
+      </li>
+      <li><b>VScode and RStudio Debugger</b>
+        <p>They have some really nice interactive debugging tools that are worth exploring</p>
+      </li>
+
+    </ul>
+  </div>
+  <!-- Link to External JavaScript File -->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

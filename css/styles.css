@@ -80,10 +80,12 @@ h4 {
 p, ul, ol {
     margin-bottom: 1rem; /* Adds spacing below paragraphs and lists */
     padding-left: 0.5rem; /* Add a little padding on the left for all text */
+    font-size: 1.1rem; /* Increased font size for better readability */
 }
 
 ul, ol {
     padding-left: 2.5rem; /* Increased indentation for lists */
+    font-size: 1.1rem; /* Match font size with paragraphs */
 }
 
 /* === Links Styling === */
@@ -294,25 +296,6 @@ footer {
   transform: translateX(0);
 }
 
-/* Menu toggle button */
-.menu-toggle {
-  position: fixed;
-  left: 10px;
-  top: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  font-size: 18px;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 30px;
-  transition: background 0.3s;
-}
-
-.menu-toggle:hover {
-  background-color: #45a049;
-}
-
 /* Navigation styles */
 nav ul {
   list-style: none;
@@ -321,7 +304,7 @@ nav ul {
 }
 
 nav li {
-  padding: 15px 20px;
+  padding: 10px 15px;
 }
 
 nav a {
