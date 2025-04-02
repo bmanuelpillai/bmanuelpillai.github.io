@@ -10,8 +10,27 @@
 </head>
 
 <body>
-
-  {% include 'menu.html' %}
+  <!-- Include the Navigation Menu -->
+  <header>
+    <h1>Useful Resources for Programmers</h1>
+    <h3>Courses and Content to Learn to Love Code</h3>
+    <!-- Menu -->
+    <button id="menu-button" aria-label="Open Menu" onclick="toggleMenu()"
+      style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">☰
+      Menu</button>
+    <nav id="main-navigation" aria-label="Main Navigation" style="display: none;">
+      <ul>
+        <li><a href="index.html">Big Picture</a></li>
+        <li><a href="functional_programming.html">Functional Programming in R</a></li>
+        <li><a href="debugging.html">Debugging in R</a></li>
+        <li><a href="git.html">Version Control using Git</a></li>
+        <li><a href="cli.html">Get Fast with CLI</a></li>
+        <li><a href="python.html">Introduction to Python</a></li>
+        <li><a href="general_tools.html">Useful tools for Programmer</a></li>
+        <li><a href="resources.html">General Resources</a></li>
+      </ul>
+    </nav>
+  </header>
   <!-- Useful courses -->
   <h3>Useful Courses</h3>
   <table>
@@ -20,39 +39,39 @@
       <th>Link</th>
       <th>Description</th>
     </tr>
-  <!-- First -->
+    <!-- First -->
     <tr>
-      <th>American University</th>
-      <th>Link</th>
+      <th>Statistical Programming in R</th>
+      <th><a href="https://american-stat-412612.netlify.app/">Link</a></th>
       <th>High-level course teaching you the basics of using Tidyverse for data analysis</th>
     </tr>
-  <!-- Second -->
+    <!-- Second -->
     <tr>
       <th>Python By Example</th>
-      <th>Link</th>
+      <th><a href="https://american-stat-412612.netlify.app/">Link</a></th>
       <th>After getting comfortable with Base R learning python through practice will be straightforward</th>
     </tr>
-  <!-- Third-->
+    <!-- Third-->
     <tr>
-      <th>Very Thorough Python Book</th>
-      <th><a href="https://jakevdp.github.io/PythonDataScienceHandbook/">Link</a></th>
-      <th>An in-depth guide to Python for data science and machine learning.</th>
+      <th>Data Wrangling in Python</th>
+      <th><a href="https://sscc.wisc.edu/sscc/pubs/dwp/">Link</a></th>
+      <th>Teaches data wrangling in Python using Pandas</th>
     </tr>
-      <!-- Fourth -->
-      <!-- Fourth -->
+    <!-- Fourth -->
+    <!-- Fourth -->
     <tr>
-      <th>DataCamp</th>
-      <th><a href="https://www.datacamp.com/">Link</a></th>
-      <th>Interactive courses on data science and analytics.</th>
+      <th></th>
+      <th><a href="">Link</a></th>
+      <th></th>
     </tr>
-      <!-- Fifth -->
+    <!-- Fifth -->
     <tr>
-      <th>Coursera</th>
-      <th><a href="https://www.coursera.org/">Link</a></th>
-      <th>Wide range of courses from top universities and companies.</th>
+      <th></th>
+      <th><a href="">Link</a></th>
+      <th></th>
     </tr>
-  <!-- Link to External JavaScript File -->
-  <script src="js/scripts.js"></script>
+    <!-- Link to External JavaScript File -->
+    <script src="js/scripts.js"></script>
 </body>
 
 </html>

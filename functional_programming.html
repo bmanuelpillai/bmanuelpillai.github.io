@@ -14,23 +14,31 @@
   <header>
     <h1>Introduction to Functional Programming</h1>
     <h3>Working with Functions and Packages in R</h3>
-        <!-- Menu -->
-        <button id="menu-button" aria-label="Open Menu" onclick="toggleMenu()"
-            style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">☰
-            Menu</button>
-        <nav id="main-navigation" aria-label="Main Navigation" style="display: none;">
-            <ul>
-                <li><a href="index.html">Big Picture</a></li>
-                <li><a href="functional_programming.html">Functional Programming in R</a></li>
-                <li><a href="debugging.html">Debugging in R</a></li>
-                <li><a href="git.html">Version Control using Git</a></li>
-                <li><a href="cli.html">Get Fast with CLI</a></li>
-                <li><a href="python.html">Introduction to Python</a></li>
-                <li><a href="general_tools.html">Useful tools for Programmer</a></li>
-            </ul>
-        </nav>
- </header>
+    <!-- Menu -->
+    <button id="menu-button" aria-label="Open Menu" onclick="toggleMenu()"
+      style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">☰
+      Menu</button>
+    <nav id="main-navigation" aria-label="Main Navigation" style="display: none;">
+      <ul>
+        <li><a href="index.html">Big Picture</a></li>
+        <li><a href="functional_programming.html">Functional Programming in R</a></li>
+        <li><a href="debugging.html">Debugging in R</a></li>
+        <li><a href="git.html">Version Control using Git</a></li>
+        <li><a href="cli.html">Get Fast with CLI</a></li>
+        <li><a href="python.html">Introduction to Python</a></li>
+        <li><a href="general_tools.html">Useful tools for Programmer</a></li>
+        <li><a href="resources.html">General Resources</a></li>
+      </ul>
+    </nav>
+  </header>
 
+  <h2>Topics Covered</h2>
+  <ul>
+    <li>Control Flow</li>
+    <li>Functions</li>
+    <li>Loops</li>
+    <li>Packages</li>
+  </ul>
   <!-- Level 1 Content -->
   <div class="level" id="level-1">
     <div class="level-header" onclick="toggleLevel(1)">
@@ -41,32 +49,32 @@
       <!-- If...Else Control Flow Boiler Plate Code -->
       <div class="path-option">
         <h4>If...Else Control Flow Boiler Plate Code</h4>
-        <p>
-          if (condition is true) {<br>
-          &nbsp;&nbsp;perform action<br>
-          } else {<br>
-          &nbsp;&nbsp;# that is, if the condition is false,<br>
-          &nbsp;&nbsp;perform alternative action<br>
+        <pre>
+          if (condition is true) {
+          perform action
+          } else {
+          #that is, if the condition is false,
+          perform alternative action
           }
-        </p>
+        </pre>
       </div>
 
       <!-- If...Else Control Flow Example -->
       <div class="path-option">
         <h4>If...Else Control Flow Example</h4>
-        <p>
-          x <- 8<br>
-            if (x >= 10) {<br>
-            &nbsp;&nbsp;print("x is greater than or equal to 10")<br>
-            } else if (x > 5) {<br>
-            &nbsp;&nbsp;print("x is greater than 5, but less than 10")<br>
-            } else {<br>
-            &nbsp;&nbsp;print("x is less than 5")<br>
+        <pre>
+          x <- 8
+            if (x >= 10) {
+          print("x is greater than or equal to 10")
+            } else if (x > 5) {
+          print("x is greater than 5, but less than 10")
+            } else {
+          print("x is less than 5")
             }
-        </p>
+        </pre>
 
-        <p>More information on Loops can be found <a
-            href="https://american-stat-412612.netlify.app/material/1-13-lecture/" target="_blank">here</a>.</p>
+        <p>More Information on Control Flow can be found <a
+            href="https://american-stat-412612.netlify.app/material/1-12-lecture/" target="_blank">here</a>.</p>
       </div>
 
     </div>
@@ -87,25 +95,26 @@
       <!-- Function Example -->
       <div class="path-option">
         <h4>Example</h4>
-        <p>
+        <pre>
           <b>Define function:</b><br>
           fahr_to_kelvin <- function(temp) {<br>
-            &nbsp;&nbsp;kelvin <- ((temp - 32) * (5 / 9)) + 273.15<br>
-              &nbsp;&nbsp;return(kelvin)<br>
+          kelvin <- ((temp - 32) * (5 / 9)) + 273.15<br>
+          return(kelvin)<br>
               }<br>
               <b>Call function:</b><br>
-              fahr_to_kelvin(32)
-        </p>
+          fahr_to_kelvin(32)
+        </pre>
       </div>
 
       <!-- Advanced Function Usage -->
       <div class="path-option">
         <h4>Advanced Function Usage</h4>
-        <p>
-          You can do more advanced things with functions like piping one function into another:<br>
-          Example:<br>
+        <pre>
+          You can do more advanced things with functions
+          like piping one function into another:<br>
+          <b>Example:</b><br>
           fahr_to_kelvin(32) |> kelvin_to_celsius()
-        </p>
+        </pre>
       </div>
 
       <p>More information on Functions can be found <a
@@ -135,14 +144,16 @@
       <!-- Level 3 Example -->
       <div class="path-option">
         <h4>Example</h4>
-        <p>
+        <pre>
           square <- function(x) { return(x * x) }<br>
-            # Create a vector of numbers<br>
-            vector1 <- c(2, 4, 5, 6)<br>
-              # Using map() function to generate squares<br>
-              map(vector1, square)
-        </p>
+           # Create a vector of numbers<br>
+          vector1 <- c(2, 4, 5, 6)<br>
+           # Using map() function to generate squares<br>
+          map(vector1, square)
+        </pre>
       </div>
+      <p>More information on Loops can be found <a
+          href="https://american-stat-412612.netlify.app/material/1-13-lecture/" target="_blank">here</a>.</p>
     </div>
   </div>
   <div class="level" id="level-4">
@@ -162,16 +173,13 @@
           function for other users, and write tests.
 
           Writing your own packages is a pretty advanced topic, but I
-          recommend starting with [Hadley Wickham's R package's book](https://r-pkgs.org/whole-game.html).
+          recommend starting with Hadley Wickham's R package's <a href="https://r-pkgs.org/whole-game.html" target="_blank">book</a>.
 
           Which covers everything from creating a package directory, writing tests, documenting functions, and
           publishing your
           package on CRAN.
         </p>
       </div>
-
-
-
     </div>
   </div>
   </div>
