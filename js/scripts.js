@@ -61,4 +61,11 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('There was a problem with the fetch operation:', error);
       });
   }
+  document.getElementById("menu-button").addEventListener("click", toggleMenu);
+
+  function toggleMenu() {
+    const menu = document.getElementById("main-navigation");
+    menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+  }
+
 });

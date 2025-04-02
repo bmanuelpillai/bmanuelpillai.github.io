@@ -13,17 +13,21 @@
     <header>
         <h1>Version Control your Code</h1>
         <h3>Learning Git and GitHub</h3>
-        <!-- Include the menu -->
-        <nav aria-label="Main Navigation">
+        <!-- Menu -->
+        <button id="menu-button" aria-label="Open Menu" onclick="toggleMenu()"
+            style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">☰
+            Menu</button>
+        <nav id="main-navigation" aria-label="Main Navigation" style="display: none;">
             <ul>
                 <li><a href="index.html">Big Picture</a></li>
                 <li><a href="functional_programming.html">Functional Programming in R</a></li>
                 <li><a href="debugging.html">Debugging in R</a></li>
                 <li><a href="git.html">Version Control using Git</a></li>
                 <li><a href="cli.html">Get Fast with CLI</a></li>
+                <li><a href="general_tools.html">Useful tools for Programmer</a></li>
+                <li><a href="python.html">Introduction to Python</a></li>
             </ul>
         </nav>
-
     </header>
 
     <div style="text-align: center;">
@@ -95,7 +99,6 @@
                 </div>
             </div>
 
-            <a href="#level-2" class="btn" onclick="activateLevel(2)">Next Level →</a>
         </div>
     </div>
 
@@ -133,7 +136,6 @@
                     <li>Merge a branch into main using a Pull Request</li>
                 </ol>
             </div>
-            <a href="#level-3" class="btn" onclick="activateLevel(3)">Next Level →</a>
         </div>
     </div>
 
@@ -175,7 +177,6 @@
                     Desktop.</p>
             </div>
 
-            <a href="#level-4" class="btn" onclick="activateLevel(4)">Next Level →</a>
         </div>
     </div>
 

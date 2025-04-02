@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starting Place for Learning Python</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- Include the Navigation Menu -->
+  <header>
+    <h1>Starting Place for Learning Python</h1>
+    <h3>Using Poetry to Manage Python Environments</h3>
+    <!-- Menu -->
+    <button id="menu-button" aria-label="Open Menu" onclick="toggleMenu()"
+      style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">☰
+      Menu</button>
+    <nav id="main-navigation" aria-label="Main Navigation" style="display: none;">
+      <ul>
+        <li><a href="index.html">Big Picture</a></li>
+        <li><a href="functional_programming.html">Functional Programming in R</a></li>
+        <li><a href="debugging.html">Debugging in R</a></li>
+        <li><a href="git.html">Version Control using Git</a></li>
+        <li><a href="cli.html">Get Fast with CLI tools</a></li>
+        <li><a href="general_tools.html">Useful tools for Programmer</a></li>
+        <li><a href="python.html">Introduction to Python</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  </nav>
+
+  </header>
+  <!-- Importance of Debugging -->
+  <h3>Going From R to Python</h3>
+  <div>
+    <p>R is great but there are many packages that python has that R does not, especially when it comes to machine learning
+    (scikit learn, PyTorch, etc.).
+
+    One the biggest sticking points I experienced from going from R to python is managing virtual environments and
+    dependencies. In R a lot of this is done behind the scenes and you often do not have to worry about using an explicit
+    package version for your code. Although in Python it is important to download specific versions of your dependencies for
+    each project.
+
+    One method I really like it using poetry environments.</p>
+  </div>
+
+  <!-- Debugging Functions -->
+  <div>
+    <h3>Installation</h3>
+    <ul>
+      <li>Download <a href="https://www.python.org/downloads/" target="_blank">Python</a> onto your computer</li>
+      <li>You want to get a <a href = "https://pip.pypa.io/en/stable/installation/" target="_blank">package manager </a>for Python on your computer</li>
+      <li>Follow these instructions to get <a href="https://python-poetry.org/docs/" target="_blank">Poetry</a> on your computer</li>
+    </ul>
+    </ul>
+  </div>
+
+  <!-- General Workflow using Poetry-->
+   <div>
+    <h3>General Workflow using Poetry</h3>
+  <pre>
+  # set up poetry and virtual environment for your repo
+  poetry init
+  poetry lock
+  poetry env activate
+  source .venv/bin/activate
+  # this should create a poetry.toml file and a lock file
+
+  # Add packages to your poetry environment
+  poetry add
+  poetry update
+  </pre>
+  <!-- Link to External JavaScript File -->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>

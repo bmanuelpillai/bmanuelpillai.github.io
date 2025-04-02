@@ -14,17 +14,17 @@
   <header>
     <h1>Introduction to Functional Programming</h1>
     <h3>Working with Functions and Packages in R</h3>
-    <!-- Include the menu -->
-    <nav aria-label="Main Navigation">
+    <!-- Menu -->
+    <button id="menu-button" aria-label="Open Menu" onclick="toggleMenu()" style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">☰ Menu</button>
+    <nav id="main-navigation" aria-label="Main Navigation" style="display: none;">
       <ul>
-        <li><a href="index.html">Big Picture</a></li>
-        <li><a href="functional_programming.html">Functional Programming in R</a></li>
-        <li><a href="debugging.html">Debugging in R</a></li>
-        <li><a href="git.html">Version Control using Git</a></li>
-        <li><a href="cli.html">Get Fast with CLI</a></li>
+      <li><a href="index.html">Big Picture</a></li>
+      <li><a href="functional_programming.html">Functional Programming in R</a></li>
+      <li><a href="debugging.html">Debugging in R</a></li>
+      <li><a href="git.html">Version Control using Git</a></li>
+      <li><a href="cli.html">Get Fast with CLI</a></li>
       </ul>
     </nav>
-
   </header>
 
   <!-- Level 1 Content -->
@@ -65,7 +65,6 @@
             href="https://american-stat-412612.netlify.app/material/1-13-lecture/" target="_blank">here</a>.</p>
       </div>
 
-      <a href="#level-2" class="btn" onclick="activateLevel(2)">Next Level →</a>
     </div>
   </div>
 
@@ -108,7 +107,6 @@
       <p>More information on Functions can be found <a
           href="https://jcoliver.github.io/learn-r/007-intro-functional-programming.html" target="_blank">here</a>.</p>
 
-      <a href="#level-3" class="btn" onclick="activateLevel(3)">Next Level →</a>
     </div>
   </div>
 
@@ -142,7 +140,6 @@
         </p>
       </div>
     </div>
-    <a href="#level-2" class="btn" onclick="activateLevel(2)">Next Level →</a>
   </div>
   <div class="level" id="level-4">
     <div class="level-header" onclick="toggleLevel(4)">

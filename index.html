@@ -10,12 +10,15 @@
 </head>
 
 <body>
-   <!-- Include the Navigation Menu -->
+  <!-- Include the Navigation Menu -->
   <header>
     <h1>The Big Picture</h1>
     <h3>Learning and Growing as a Researcher through Code</h3>
-    <!-- Include the menu -->
-    <nav aria-label="Main Navigation">
+    <!-- Menu -->
+    <button id="menu-button" aria-label="Open Menu" onclick="toggleMenu()"
+      style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">☰
+      Menu</button>
+    <nav id="main-navigation" aria-label="Main Navigation" style="display: none;">
       <ul>
         <li><a href="index.html">Big Picture</a></li>
         <li><a href="functional_programming.html">Functional Programming in R</a></li>
@@ -25,22 +28,28 @@
       </ul>
     </nav>
   </header>
+
+  </header>
   <!-- Level 2 Content -->
- <h2>The Motivation to Learn to Code as a Researcher</h2>
-<p>The big picture when it comes to coding as a scientist:</p>
-<p>When you first start to program it can feel really overwhelming. You aren't comfortable with the language, you have to look up everything before you can implement what you want, and you'll more experienced programmers doing things a lot faster. It can be feel really overwheling, but reassured this will be the hardest part of your programming journey Once you gain experience and confidence as a programmer, you will
-feel like you can tackle any problem.</p>
+  <h2>The Motivation to Learn to Code as a Researcher</h2>
+  <p>The big picture when it comes to coding as a scientist:</p>
+  <p>When you first start to program it can feel really overwhelming. You aren't comfortable with the language, you have
+    to look up everything before you can implement what you want, and you'll more experienced programmers doing things a
+    lot faster. It can be feel really overwheling, but reassured this will be the hardest part of your programming
+    journey Once you gain experience and confidence as a programmer, you will
+    feel like you can tackle any problem.</p>
 
-<p><b>One video I really like about scientists and coding:</b>
-<a href="https://www.youtube.com/watch?v=ku0KGMabyYA" target="_blank">
-How to learn programming - Advice for scientists | Clara Sousa-Silva and Lex Fridman - YouTube
-</a></p>
+  <p><b>One video I really like about scientists and coding:</b>
+    <a href="https://www.youtube.com/watch?v=ku0KGMabyYA" target="_blank">
+      How to learn programming - Advice for scientists | Clara Sousa-Silva and Lex Fridman - YouTube
+    </a>
+  </p>
 
-<h3>My analogy on coding</h3>
-<p>Something about how coding is like Minecraft: At the start, you struggle to
-stay alive, but after a while, you get really good, and some tasks, like getting
-food, become automatic.</p>
-<img src="attachments/minecraft.jpg" alt="minecraft" style = "width:400px; height:400px;">
+  <h3>My analogy on coding</h3>
+  <p>Something about how coding is like Minecraft: At the start, you struggle to
+    stay alive, but after a while, you get really good, and some tasks, like getting
+    food, become automatic.</p>
+  <img src="attachments/minecraft.jpg" alt="minecraft" style="width:400px; height:400px;">
   <!-- Link to External JavaScript File -->
   <script src="js/scripts.js"></script>
 </body>
