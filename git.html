@@ -10,40 +10,42 @@
 </head>
 
 <body>
-<!-- Include the Navigation Menu -->
-<header>
-    <div>
-    <div style="text-align: center;">
-        <h1>Version Control your Code</h1>
-        <h3>Learning Git and GitHub</h3>
-    </div>
-    <!-- Menu -->
-    <div style="text-align: center;"></div>
-    <button id="menu-button" class="menu-button" aria-label="Toggle Menu" onclick="toggleMenu()"
-        style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">☰ Menu</button>
-         <br> </br>
-        <div style="text-align: center;"></div>
-            <button onclick="toggleDarkMode()" class="dark-mode-toggle" aria-label="Toggle Dark Mode" style="margin: 0 auto;">
-            <span class="text">Dark Mode</span>
+    <!-- Include the Navigation Menu -->
+    <header>
+        <div>
+            <div style="text-align: center;">
+                <h1>Version Control your Code</h1>
+                <h3>Learning Git and GitHub</h3>
+            </div>
+            <!-- Menu -->
+            <div style="text-align: center;"></div>
+            <button id="menu-button" class="menu-button" aria-label="Toggle Menu" onclick="toggleMenu()"
+                style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">☰
+                Menu</button>
+            <br> </br>
+            <div style="text-align: center;"></div>
+            <button onclick="toggleDarkMode()" class="dark-mode-toggle" aria-label="Toggle Dark Mode"
+                style="margin: 0 auto;">
+                <span class="text">Dark Mode</span>
         </div>
         </button>
-    </div>
-</div>
-    <!-- Navigation -->
-    <nav id="main-navigation" aria-label="Main Navigation" style="display: none;">
-        <ul>
-            <li><a href="index.html">Big Picture</a></li>
-            <li><a href="functional_programming.html">Functional Programming in R</a></li>
-            <li><a href="debugging.html">Debugging in R</a></li>
-            <li><a href="git.html">Version Control using Git</a></li>
-            <li><a href="cli.html">Get Fast with CLI</a></li>
-            <li><a href="python.html">Introduction to Python</a></li>
-            <li><a href="machine_learning.html">Intro to Machine Learning</a></li>
-            <li><a href="general_tools.html">Useful tools for Programmers</a></li>
-            <li><a href="resources.html">General Resources</a></li>
-        </ul>
-    </nav>
-</header>
+        </div>
+        </div>
+        <!-- Navigation -->
+        <nav id="main-navigation" aria-label="Main Navigation" style="display: none;">
+            <ul>
+        <li><a href="index.html">Big Picture</a></li>
+        <li><a href="functional_programming.html">Functional Programming in R</a></li>
+        <li><a href="debugging.html">Debugging in R</a></li>
+        <li><a href="git.html">Version Control using Git</a></li>
+        <li><a href="cli.html">Get Fast with CLI</a></li>
+        <li><a href="python.html">Introduction to Python</a></li>
+        <li><a href="machine_learning.html">Intro to Machine Learning</a></li>
+        <li><a href="general_tools.html">Useful tools for Programmers</a></li>
+        <li><a href="resources.html">General Resources</a></li>
+            </ul>
+        </nav>
+    </header>
     <div style="text-align: center;">
         <h1>4 Levels of Version Control</h1>
     </div>
@@ -162,7 +164,7 @@
             <p>At this point, you understand the basics of Git, and the scale of the projects you work on are becoming
                 very large. There are some advanced tips that you should start to use to stay organized.</p>
 
-            <h3>Key Advanced Features</h3>
+            <h3>Advanced Features</h3>
 
             <div class="path-option">
                 <h4>.gitignore</h4>
@@ -180,8 +182,18 @@
                     when you want to go back to a previous change, it is easier to see what change happened in what
                     order.</p>
                 <p>More information on merging vs rebasing: <a
-                        href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing"
-                        target="_blank">https://www.atlassian.com/git/tutorials/merging-vs-rebasing</a></p>
+                        href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing" target="_blank">Link</a></p>
+            </div>
+
+            <div class="path-option">
+                <h4>Squashing commits</h4>
+                <p>When you want to rebase 2 branches it is super useful to squash (combined) as many commits as you can
+                    together. Rebasing works by reapplying commits on top of a new base commit, so basically takes the
+                    commits from branch B and stacks them onto branch A. This is a lot easier if you have fewer commits,
+                    and it also makes it easier for you later one when you want to look at your commit history and see
+                    what you did before.</p>
+                <p>More Information on Squashing Commits: <a href="https://www.git-tower.com/learn/git/faq/git-squash"
+                        target="_blank">Link</a></p>
             </div>
 
             <div class="path-option">
