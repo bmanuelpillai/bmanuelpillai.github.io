@@ -70,8 +70,10 @@ pre {
 
 /* === Improve Level Content Visibility === */
 .level-content {
-    background-color: #f9f9f9; /* Light gray background in light mode */
-    color: #333; /* Dark text */
+    background-color: #f9f9f9;
+    /* Light gray background in light mode */
+    color: #333;
+    /* Dark text */
     padding: 15px;
     border-radius: 5px;
     margin-top: 10px;
@@ -79,10 +81,14 @@ pre {
 
 /* === Dark Mode for Level Content === */
 .dark-mode .level-content {
-    background-color: #222; /* Dark background for contrast */
-    color: #ddd; /* Light text for readability */
-    border: 1px solid #444; /* Subtle border for structure */
+    background-color: #222;
+    /* Dark background for contrast */
+    color: #ddd;
+    /* Light text for readability */
+    border: 1px solid #444;
+    /* Subtle border for structure */
 }
+
 /* === Improve Level Header Visibility === */
 .level-header {
     background-color: #e0e0e0;
@@ -128,6 +134,7 @@ pre {
     /* Slightly lighter for visibility */
     color: black;
 }
+
 /* === Header Styling === */
 header {
     background-color: var(--dark-color);
@@ -544,4 +551,77 @@ td {
     border-bottom: 1px solid #ddd;
     padding: 15px;
     text-align: left;
+}
+
+/* CSS Styles for Dark Mode Toggle Button */
+/* Dark Mode Toggle Button */
+.dark-mode-toggle {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    background-color: var(--light-color);
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+}
+
+.dark-mode-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-container {
+    position: relative;
+    width: 18px;
+    height: 18px;
+}
+
+.moon-icon, .sun-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.sun-icon {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0);
+}
+
+/* Dark Mode Active State */
+.dark-mode .dark-mode-toggle {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode .moon-icon {
+    opacity: 0;
+    transform: rotate(90deg) scale(0);
+}
+
+.dark-mode .sun-icon {
+    opacity: 1;
+    transform: rotate(0) scale(1);
+}
+
+.dark-mode .toggle-text {
+    content: "Light Mode";
+}
+
+.dark-mode .toggle-text:before {
+    content: "Light Mode";
+    position: absolute;
 }

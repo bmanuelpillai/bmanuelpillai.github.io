@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git & GitHub Learning Path</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<!-- Include the Navigation Menu -->
+<header>
+    <div>
+    <div style="text-align: center;">
+        <h1>Version Control your Code</h1>
+        <h3>Learning Git and GitHub</h3>
+    </div>
+    <!-- Menu -->
+    <div style="text-align: center;"></div>
+    <button id="menu-button" class="menu-button" aria-label="Toggle Menu" onclick="toggleMenu()"
+        style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">☰ Menu</button>
+         <br> </br>
+        <div style="text-align: center;"></div>
+            <button onclick="toggleDarkMode()" class="dark-mode-toggle" aria-label="Toggle Dark Mode" style="margin: 0 auto;">
+            <span class="text">Dark Mode</span>
+        </div>
+        </button>
+    </div>
+</div>
+    <!-- Navigation -->
+    <nav id="main-navigation" aria-label="Main Navigation" style="display: none;">
+        <ul>
+            <li><a href="index.html">Big Picture</a></li>
+            <li><a href="functional_programming.html">Functional Programming in R</a></li>
+            <li><a href="debugging.html">Debugging in R</a></li>
+            <li><a href="git.html">Version Control using Git</a></li>
+            <li><a href="cli.html">Get Fast with CLI</a></li>
+            <li><a href="python.html">Introduction to Python</a></li>
+            <li><a href="machine_learning.html">Intro to Machine Learning</a></li>
+            <li><a href="general_tools.html">Useful tools for Programmers</a></li>
+            <li><a href="resources.html">General Resources</a></li>
+        </ul>
+    </nav>
+</header>
+    <div style="text-align: center;">
+        <h1>4 Levels of Version Control</h1>
+    </div>
+
+    <div class="level" id="level-1">
+        <div class="level-header" onclick="toggleLevel(1)">
+            <div class="level-number">1</div>
+            <h2 class="level-title">Getting Started with GitHub</h2>
+        </div>
+        <div class="level-content active">
+            <p>GitHub GUI is great for 90% of what you'll be using Git for. Let's start with the basics:</p>
+
+            <ul>
+                <li class="bullet-item">Create a&nbsp;<a href="https://github.com/" target="_blank">GitHub account</a>
+                </li>
+                <li class="bullet-item">Download&nbsp;<a href="https://github.com/apps/desktop" target="_blank">GitHub
+                        Desktop</a></li>
+                <li class="bullet-item">Download&nbsp;<a href="https://git-scm.com/downloads" target="_blank">Git</a>
+                </li>
+                <li class="bullet-item">Complete the GitHub tutorial</li>
+            </ul>
+
+            <h3>2 Main Paths When Starting a New Project</h3>
+
+            <div class="path-option">
+                <h4>Option 1: Clone Someone Else's Repository</h4>
+                <p>To clone someone else's repository from GitHub:</p>
+                <ul>
+                    <li>Copy the link to the repo</li>
+                    <li>Click File > Clone Repository in GitHub Desktop</li>
+                    <li>Paste the link and choose where you want to copy the Repository locally</li>
+                </ul>
+            </div>
+
+            <div class="path-option">
+                <h4>Option 2: Make Your Own Repository</h4>
+                <p>To make your own version-controlled repository:</p>
+                <ul>
+                    <li>Click File > New Repository in GitHub Desktop</li>
+                    <li>Give your repository a name and description</li>
+                    <li>Choose a local path</li>
+                    <li>Click "Create Repository"</li>
+                </ul>
+            </div>
+
+            <p>The main point of Git is to version control your code and collaborate with others like Google Docs.</p>
+
+            <div class="visual-container">
+                <div class="visual-item">
+                    <div class="icon">💾</div>
+                    <h4>Committing</h4>
+                    <p>Saving changes locally with messages</p>
+                </div>
+                <div class="visual-item">
+                    <div class="icon">☁️</div>
+                    <h4>Pushing</h4>
+                    <p>Transferring changes to GitHub</p>
+                </div>
+                <div class="visual-item">
+                    <div class="icon">⬇️</div>
+                    <h4>Pulling</h4>
+                    <p>Getting others' changes locally</p>
+                    <a href="https://gist.github.com/ZoeKHarvey/96cc58d782df8ea1ee5cf4117e66282a" target="_blank">Learn
+                        more</a>
+                </div>
+            </div>
+            <div style="text-align: center;">
+                <img src="images/git.webp" alt="git workflow">
+            </div>
+        </div>
+    </div>
+
+    <div class="level" id="level-2">
+        <div class="level-header" onclick="toggleLevel(2)">
+            <div class="level-number">2</div>
+            <h2 class="level-title">Working with Branches</h2>
+        </div>
+        <div class="level-content">
+            <p>The next level of working in Git would be to start using branches in Git. A branch is basically a copy of
+                a repository that you can use to try out changes to your code before adding them to your existing code.
+            </p>
+
+            <div class="path-option">
+                <h3>Creating and Using Branches</h3>
+                <ol>
+                    <li>In GitHub Desktop, click "Branch" in the top menu</li>
+                    <li>Select "New Branch" and give it a name</li>
+                    <li>Make your changes in this branch</li>
+                    <li>Commit the changes to the branch</li>
+                    <li>Push the branch to GitHub</li>
+                </ol>
+            </div>
+            <p>Once the changes you make to the new branch look good, you can merge those changes into your main branch.
+                This is especially useful when you are working with other people and each want to make changes to code
+                and then combine them together.</p>
+
+
+            <div class="path-option">
+                <h3>Pulling changes from a feature branch into the main branch</h3>
+                <ol>
+                    <li>Create a new branch</li>
+                    <li>Commit changes to a branch</li>
+                    <li>Push changes to GitHub</li>
+                    <li>Merge a branch into main using a Pull Request</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="level" id="level-3">
+        <div class="level-header" onclick="toggleLevel(3)">
+            <div class="level-number">3</div>
+            <h2 class="level-title">Advanced Git Features</h2>
+        </div>
+        <div class="level-content">
+            <p>At this point, you understand the basics of Git, and the scale of the projects you work on are becoming
+                very large. There are some advanced tips that you should start to use to stay organized.</p>
+
+            <h3>Key Advanced Features</h3>
+
+            <div class="path-option">
+                <h4>.gitignore</h4>
+                <p>A file that tells Git what files to not track. This would include data and passwords you do not want
+                    on GitHub.</p>
+                <p>More information on gitignore: <a
+                        href="https://www.freecodecamp.org/news/gitignore-what-is-it-and-how-to-add-to-repo/"
+                        target="_blank">https://www.freecodecamp.org/news/gitignore-what-is-it-and-how-to-add-to-repo/</a>
+                </p>
+            </div>
+
+            <div class="path-option">
+                <h4>Rebasing vs. Merging</h4>
+                <p>Rebasing is preferred over merging because it keeps a linear commit history of all the changes, so
+                    when you want to go back to a previous change, it is easier to see what change happened in what
+                    order.</p>
+                <p>More information on merging vs rebasing: <a
+                        href="https://www.atlassian.com/git/tutorials/merging-vs-rebasing"
+                        target="_blank">https://www.atlassian.com/git/tutorials/merging-vs-rebasing</a></p>
+            </div>
+
+            <div class="path-option">
+                <h4>Use Git in the Terminal</h4>
+                <p>Using Git in the terminal is great because you never have to leave your code editor to make changes
+                    to your code, as well as opens up a bunch of advanced features that are a bit harder using GitHub
+                    Desktop.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="level" id="level-4">
+        <div class="level-header" onclick="toggleLevel(4)">
+            <div class="level-number">4</div>
+            <h2 class="level-title">Continuous Development using Git</h2>
+        </div>
+        <div class="level-content">
+            <p>Once you start getting into the software side of coding, it is super useful to use advanced Git workflows
+                and automation.</p>
+
+            <h3>Professional Git Tools</h3>
+
+            <div class="path-option">
+                <h4>Pre-commit Hooks</h4>
+                <p>Use <a href="https://pre-commit.com/" target="_blank">pre-commit</a> to make sure that all changes to
+                    your code are consistent in their style and do not include anything you do not want on GitHub.</p>
+            </div>
+
+            <div class="path-option">
+                <h4>Pull Requests</h4>
+                <p>Another advanced feature is to use pull requests in GitHub so that before anyone can add changes to
+                    your main branch, you can make sure that certain code requirements are met beforehand.</p>
+                <ol>
+                    <li>Create a branch with your changes</li>
+                    <li>Push the branch to GitHub</li>
+                    <li>Go to the repository on GitHub and click "New pull request"</li>
+                    <li>Select your branch to merge into main</li>
+                    <li>Add reviewers and description</li>
+                    <li>Create the pull request</li>
+                </ol>
+            </div>
+
+            <div class="path-option">
+                <h4>GitHub Actions</h4>
+                <p><a href="https://docs.github.com/en/actions/about-github-actions/understanding-github-actions"
+                        target="_blank">GitHub Actions</a> are automated actions that occur after a certain event.
+                    GitHub actions go along with pull requests and are used to run tests prior to merging a branch.</p>
+            </div>
+
+            <a href="#" class="btn" onclick="activateLevel(1)">Back to Level 1</a>
+        </div>
+    </div>
+
+    <!-- Link to External JavaScript File -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
