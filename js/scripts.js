@@ -61,11 +61,21 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('There was a problem with the fetch operation:', error);
       });
   }
-  document.getElementById("menu-button").addEventListener("click", toggleMenu);
 
-  function toggleMenu() {
-    const menu = document.getElementById("main-navigation");
-    menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+  // Menu button toggle
+  const menuButton = document.getElementById('menu-button');
+  if (menuButton) {
+    menuButton.addEventListener('click', function () {
+      this.classList.toggle('open');
+      const menu = document.getElementById("main-navigation");
+      if (menu) {
+        menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+      }
+    });
   }
-
 });
+
+// Toggle Dark Mode
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
