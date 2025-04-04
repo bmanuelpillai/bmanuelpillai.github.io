@@ -10,29 +10,29 @@
 </head>
 
 <body>
-<!-- Include the Navigation Menu -->
-<header>
-  <div>
-    <div style="text-align: center;">
-      <h1>Command Line Tools</h1>
-      <h3>Get Fast with CLIs</h3>
+  <!-- Include the Navigation Menu -->
+  <header>
+    <div>
+      <div style="text-align: center;">
+        <h1>Command Line Tools</h1>
+        <h3>Get Fast with CLIs</h3>
+      </div>
+      <!-- Menu -->
+      <div style="text-align: center;"></div>
+      <button id="menu-button" class="menu-button" aria-label="Toggle Menu" onclick="toggleMenu()"
+        style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">☰
+        Menu</button>
+      <br> </br>
+      <div style="text-align: center;"></div>
+      <button onclick="toggleDarkMode()" class="dark-mode-toggle" aria-label="Toggle Dark Mode" style="margin: 0 auto;">
+        <span class="text">Dark Mode</span>
     </div>
-    <!-- Menu -->
-    <div style="text-align: center;"></div>
-    <button id="menu-button" class="menu-button" aria-label="Toggle Menu" onclick="toggleMenu()"
-      style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">☰
-      Menu</button>
-    <br> </br>
-    <div style="text-align: center;"></div>
-    <button onclick="toggleDarkMode()" class="dark-mode-toggle" aria-label="Toggle Dark Mode" style="margin: 0 auto;">
-      <span class="text">Dark Mode</span>
-  </div>
-  </button>
-  </div>
-  </div>
-  <!-- Navigation -->
-  <nav id="main-navigation" aria-label="Main Navigation" style="display: none;">
-    <ul>
+    </button>
+    </div>
+    </div>
+    <!-- Navigation -->
+    <nav id="main-navigation" aria-label="Main Navigation" style="display: none;">
+      <ul>
         <li><a href="index.html">Big Picture</a></li>
         <li><a href="functional_programming.html">Functional Programming in R</a></li>
         <li><a href="debugging.html">Debugging in R</a></li>
@@ -42,9 +42,9 @@
         <li><a href="machine_learning.html">Intro to Machine Learning</a></li>
         <li><a href="general_tools.html">Useful tools for Programmers</a></li>
         <li><a href="resources.html">General Resources</a></li>
-    </ul>
-  </nav>
-</header>
+      </ul>
+    </nav>
+  </header>
   <!-- Why Learn to Use Cli Tools -->
   <h3>Why Learn to Use CLI tools</h3>
   <div class="path-option">
@@ -62,7 +62,8 @@
   <!--Getting Good with your Terminal-->
   <h3>Getting Good with your Terminal</h3>
   <div class="path-option">
-    <p>Learning to navigate through your computer's file system using linux commands opens up several doors for you, with the main benefit being opening you up to use
+    <p>Learning to navigate through your computer's file system using linux commands opens up several doors for you,
+      with the main benefit being opening you up to use
     </p>
   </div>
   <!-- Commonly Used CLI tools -->
@@ -93,6 +94,7 @@
       </ul>
       <div></div>
     </div>
+    <a href="#" class="btn" onclick="scrollToTop()">Back to Top</a>
     <!-- Link to External JavaScript File -->
     <script src="js/scripts.js"></script>
 </body>
