@@ -4,18 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Debugging in R</title>
+  <title>Starting Place</title>
   <!-- Link to the external CSS file -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
   <!-- Include the Navigation Menu -->
+  <!-- Include the Navigation Menu -->
   <header>
     <div>
       <div style="text-align: center;">
-        <h1>Debugging in R</h1>
-        <h3>Squash bugs fast</h3>
+        <h1>Start Here</h1>
+        <h3>Get Comfortable Working with Data</h3>
       </div>
       <!-- Menu -->
       <div style="text-align: center;"></div>
@@ -34,7 +35,6 @@
     <nav id="main-navigation" aria-label="Main Navigation" style="display: none;">
       <ul>
         <li><a href="index.html">Big Picture</a></li>
-        <li><a href="timeline.html">Learning Path</a></li>
         <li><a href="data_cleaning.html">Data Manipulation and Visualization</a></li>
         <li><a href="functional_programming.html">Functional Programming in R</a></li>
         <li><a href="debugging.html">Debugging in R</a></li>
@@ -47,43 +47,49 @@
       </ul>
     </nav>
   </header>
-  </nav>
-
-  </header>
-  <!-- Importance of Debugging -->
-  <h3>Learn to Debug R code</h3>
-  <div>
-    <p>Debugging code is one of the most important skills after you start
-      writing your own functions. Developing the skill of debugging takes
-      time but here are some starting places I recommend.
-      Some recommended reading in <a href="https://adv-r.hadley.nz/debugging.html" target="_blank">Hadley Wickham's
-        Advanced R book</a></p>
+  <!-- VScode and VIM -->
+  <h3>Cleaning and Visualizing Data</h3>
+  <div class="path-option">
+    <p>The best place to start working with data is to clean and visualize that data. You should calculate descriptive
+      statistics on your dataset before you run any statistical tests.</p>
   </div>
 
-  <!-- Debugging Functions -->
-  <div>
-    <h3>Debugging Functions</h3>
-    <div class="path-option">
-      <ul>
-        <li>
-          <b>browser()</b>
-          <p>Put this in the body of your function, and it will pause its execution allowing you to interactively step
-            through your function</p>
-        </li>
-        <li>
-          <b>debug()</b>
-          <p>Stops a function from executing automatically and allows you to execute one statement at a time</p>
-        </li>
-        <li>
-          <b>print("")</b>
-          <p>Print statements are useful to pin down where you are during a function's execution</p>
-        </li>
-        <li>
-          <b>VScode and RStudio Debugger</b>
-          <p>They have some really nice interactive debugging tools that are worth exploring</p>
-        </li>
-      </ul>
-    </div>
+  <!--Why Learn VScode-->
+  <h3>Tidyverse</h3>
+  <div class="path-option">
+    <p>I think learning the Tidyverse is a great way to write readable code for manipulating code and works well with
+      ggplot to visualize that data. I recommend starting with this <a href="https://american-stat-412612.netlify.app/"
+        target="_blank">course</a> and this associated Youtube series <a
+        href="https://www.youtube.com/playlist?list=PL6FsZxVq54ERrlMRNE5aq2qUFH042fbuM" target="_blank">by Kelsey
+        Codes</a>. The course does a great job quickly getting you familiar with tidyverse and ggplot and provides associated homeworks.</p>
+    <h3>Frequently Used Functions to Start</h3>
+    <ul>
+      <li>select()
+        <ul>
+          <li>Used to select specific columns from a dataset</li>
+        </ul>
+      </li>
+      <li>filter()
+        <ul>
+          <li>Used to filter rows based on specific conditions</li>
+        </ul>
+      </li>
+      <li>pivot_longer()
+        <ul>
+          <li>Transforms wide data into long format</li>
+        </ul>
+      </li>
+      <li>pivot_wider()
+        <ul>
+          <li>transforms long data into wide format</li>
+        </ul>
+      </li>
+      <li>ggplot()
+        <ul>
+          <li>Use this to start plotting and add + to add layers</li>
+        </ul>
+      </li>
+  </div>
   </div>
   <a href="#" class="btn" onclick="scrollToTop()">Back to Top</a>
   <!-- Link to External JavaScript File -->

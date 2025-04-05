@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programming and Data Science Learning Path</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<!-- Include the Navigation Menu -->
+  <header>
+    <div style="text-align: center;">
+      <h1>Programming and Data Science Learning Path</h1>
+      <button id="menu-button" class="menu-button" aria-label="Toggle Menu" onclick="toggleMenu()"
+        style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px;">☰
+        Menu</button>
+      <br><br>
+      <button onclick="toggleDarkMode()" class="dark-mode-toggle" aria-label="Toggle Dark Mode" style="margin: 0 auto;">
+        <span class="text">Dark Mode</span>
+      </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="main-navigation" aria-label="Main Navigation" style="display: none;">
+      <ul>
+        <li><a href="index.html">Big Picture</a></li>
+        <li><a href="timeline.html">Learning Path</a></li>
+        <li><a href="data_cleaning.html">Data Manipulation and Visualization</a></li>
+        <li><a href="functional_programming.html">Functional Programming in R</a></li>
+        <li><a href="debugging.html">Debugging in R</a></li>
+        <li><a href="git.html">Version Control using Git</a></li>
+        <li><a href="cli.html">Get Fast with CLI</a></li>
+        <li><a href="python.html">Introduction to Python</a></li>
+        <li><a href="machine_learning.html">Intro to Machine Learning</a></li>
+        <li><a href="general_tools.html">Useful tools for Programmers</a></li>
+        <li><a href="resources.html">General Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+<body>
+  <div class="phase">
+    <h2>Phase 1: Getting Started</h2>
+    <ul>
+      <li>Start with the American University course</li>
+      <li>Complete the homework assignments</li>
+      <li>Read Hadley Wickham's version of R</li>
+      <li>Experiment with functions, loops, and control flow in your code</li>
+      <li>Learn GitHub for version control</li>
+      <li>If machine learning is needed for your research:
+        <ul>
+          <li>Learn basics of Pandas and NumPy in Python</li>
+          <li>Use Poetry to manage Python dependencies</li>
+          <li>Participate in Kaggle learning competitions</li>
+          <li>Study how experts approach regression and classification tasks</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="note">
+      <strong>Note:</strong> Stop here if coding is less than 50% of your job or you don't see yourself coding in the
+      long term.
+    </div>
+  </div>
+
+  <div class="phase">
+    <h2>Phase 2: Advancing Your Skills</h2>
+    <ul>
+      <li>Read Hadley Wickham's "Advanced R" and "R Packages"</li>
+      <li>Work towards creating well-documented packages to share with others</li>
+      <li>Learn about non-standard evaluation for using tidyverse syntax in functions</li>
+      <li>Develop debugging skills for functions</li>
+      <li>Get comfortable with:
+        <ul>
+          <li>Git branches, rebasing, and pull requests</li>
+          <li>Command-line tools and terminal navigation</li>
+          <li>Simple bash scripting</li>
+        </ul>
+      </li>
+      <li><em>(Optional)</em> Read "Grokking Algorithms" to understand basic data structures and algorithms</li>
+      <li>Focus on refining your statistics skills simultaneously</li>
+    </ul>
+  </div>
+
+  <div class="phase">
+    <h2>Phase 3: Advanced Applications</h2>
+    <ul>
+      <li>Balance coding skills with research questions and statistical knowledge</li>
+      <li>Explore Bayesian frameworks that require computational power</li>
+      <li>Learn to use:
+        <ul>
+          <li>High-performance computing clusters (if available)</li>
+          <li>AWS or Azure cloud computing</li>
+        </ul>
+      </li>
+    </ul>
+    <div class="note">
+      <strong>Note:</strong> Stop here if you are satisfied with your skill set and aren't focused on optimization.
+    </div>
+  </div>
+
+  <div class="phase">
+    <h2>Phase 4: Optimization and Customization</h2>
+    <ul>
+      <li>Switch to VS Code as your editor</li>
+      <li>Experiment with Vim motions</li>
+      <li>Customize your terminal environment</li>
+      <li>Watch educational videos about interesting projects</li>
+      <li>Participate in Kaggle projects and study other people's solutions</li>
+      <li>For advanced software development:
+        <ul>
+          <li>Learn Docker containers</li>
+          <li>Master cloud computing services (AWS or Azure)</li>
+        </ul>
+      </li>
+      <li>Consider learning SQL if you work with a lot of data</li>
+    </ul>
+  </div>
+  <!-- Back to Top button -->
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="#" class="btn" onclick="scrollToTop()">Back to Top</a>
+  </div>
+
+  <!-- Link to External JavaScript File -->
+  <script src="js/scripts.js"></script>
+</body>
+
+</html>
