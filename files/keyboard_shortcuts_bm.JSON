@@ -1,0 +1,116 @@
+[
+    // ======================== R-Specific Shortcuts ========================
+    // Insert an R code snippet using ```{r}...``` block
+    {
+        "key": "cmd+alt+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+            "snippet": "```{r}\n$0\n```"
+        }
+    },
+    // Pipe operator shortcut for R using native pipe `|>`
+    {
+        "key": "cmd+shift+m",
+        "command": "type",
+        "args": {
+            "text": " |> "
+        },
+        "when": "editorTextFocus"
+    },
+    // Insert comment block for R, useful for section headings
+    {
+        "key": "cmd+shift+r",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == r && editorTextFocus",
+        "args": {
+            "snippet": "# ${TM_SELECTED_TEXT}$0 ----"
+        }
+    },
+    // ======================== Terminal Management ========================
+    // Open a new terminal window
+    {
+        "key": "cmd+shift+.",
+        "command": "workbench.action.terminal.new"
+    },
+    // Toggle terminal visibility
+    {
+        "key": "cmd+shift+d",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    // ======================== Vim-Specific Shortcuts ========================
+
+   // ======================== Editor Navigation ========================
+    // Move between editors using directional keys (left, right, up, down)
+    {
+        "key": "ctrl+shift+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+shift+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.navigateDown"
+    },
+    // Split editor horizontally
+    {
+        "key": "shift+alt+backspace",
+        "command": "workbench.action.splitEditor",
+        "when": "editorTextFocus"
+    },
+    // ======================== UI Management ========================
+    // Toggle the sidebar visibility
+    {
+        "key": "cmd+d",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    // Open the command palette using double shift
+    {
+        "key": "shift+shift",
+        "command": "workbench.action.showCommands"
+    },
+    // Zoom in and out with keyboard shortcuts
+    {
+        "key": "ctrl+=",
+        "command": "workbench.action.zoomIn"
+    },
+    {
+        "key": "ctrl+-",
+        "command": "workbench.action.zoomOut"
+    },
+    // Collapse all folders in the Explorer panel
+    {
+        "key": "shift+cmd+=",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+    // ======================== Editor Management ========================
+    // Navigate between open files using specific keys
+    {
+        "key": "cmd+]",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "cmd+[",
+        "command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    // Open and switch through editors using Ctrl + Shift shortcuts
+    {
+        "key": "ctrl+shift+[",
+        "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+]",
+        "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    }
+]
+

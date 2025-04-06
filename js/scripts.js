@@ -12,13 +12,11 @@ function activateLevel(levelNum) {
   document.querySelectorAll('.level-content').forEach(content => {
     content.classList.remove('active');
   });
-
   // Show the target level content
   const targetContent = document.querySelector(`#level-${levelNum} .level-content`);
   if (targetContent) {
     targetContent.classList.add('active');
   }
-
   // Scroll to the level
   const targetLevel = document.querySelector(`#level-${levelNum}`);
   if (targetLevel) {
@@ -28,6 +26,32 @@ function activateLevel(levelNum) {
   }
 }
 
+// Toggle menu visibility
+function toggleMenu() {
+  const menu = document.getElementById("main-navigation");
+  if (menu) {
+    menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+    const menuButton = document.getElementById('menu-button');
+    if (menuButton) {
+      menuButton.classList.toggle('open');
+    }
+  }
+}
+
+// Toggle Dark Mode
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
+
+// Function to scroll to top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+  return false;
+}
+
 // Initialize everything on DOMContentLoaded
 document.addEventListener('DOMContentLoaded', function () {
   // Open all level contents by default
@@ -35,14 +59,25 @@ document.addEventListener('DOMContentLoaded', function () {
     content.classList.add('active');
   });
 
-  // Menu Toggle
-  const menuToggle = document.querySelector('.menu-toggle');
-  const sidebar = document.querySelector('.sidebar');
-  if (menuToggle && sidebar) {
-    menuToggle.addEventListener('click', function () {
-      sidebar.classList.toggle('active');
+  // Load the header
+  fetch('header.html')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not OK');
+      }
+      return response.text();
+    })
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+      // Set the page-specific title
+      const pageTitle = document.getElementById('page-title');
+      if (pageTitle) {
+        pageTitle.innerText = document.title || 'The Big Picture';
+      }
+    })
+    .catch(error => {
+      console.error('There was a problem loading the header:', error);
     });
-  }
 
   // Load Menu
   const menuContainer = document.getElementById('menu');
@@ -61,21 +96,4 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('There was a problem with the fetch operation:', error);
       });
   }
-
-  // Menu button toggle
-  const menuButton = document.getElementById('menu-button');
-  if (menuButton) {
-    menuButton.addEventListener('click', function () {
-      this.classList.toggle('open');
-      const menu = document.getElementById("main-navigation");
-      if (menu) {
-        menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
-      }
-    });
-  }
 });
-
-// Toggle Dark Mode
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
-}

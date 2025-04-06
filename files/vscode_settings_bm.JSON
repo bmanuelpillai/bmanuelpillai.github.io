@@ -1,0 +1,121 @@
+{
+  // Editor Settings
+  "editor.fontSize": 14,
+  "editor.fontFamily": "'Fira Code'",
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "REditorSupport.r",
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "none",
+  "editor.smoothScrolling": true,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.guides.indentation": true,
+  "editor.renderLineHighlight": "none",
+  "editor.wordWrap": "on",
+  "editor.lineNumbers": "relative",
+  // Workbench Settings
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.startupEditor": "none",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Shades of Purple",
+  "workbench.sideBar.location": "right",
+  "workbench.activityBar.location": "top",
+  "workbench.list.smoothScrolling": true,
+  "workbench.preferredLightColorTheme": "GitHub Dark Default",
+  "workbench.preferredDarkColorTheme": "Shades of Purple (Super Dark)",
+  // Terminal Settings
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.enableMultiLinePasteWarning": "never",
+  "debug.toolBarLocation": "commandCenter",
+  "terminal.integrated.smoothScrolling": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  // VIM Settings
+  "vim.useSystemClipboard": true,
+  // Git Settings
+  "git.enableSmartCommit": false,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#3cf27f",
+    "[Aura Dracula Spirit (Soft)]": {
+      "editorSuggestWidget.selectedBackground": "#3A334B",
+      "sideBar.background": "#5209e4"
+    }
+  },
+  "editor.formatOnPaste": true,
+  // File Settings
+  "files.associations": {
+    "*.Rmd": "rmd"
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.autoSave": "afterDelay",
+  "typescript.suggest.paths": false,
+  "javascript.suggest.paths": false,
+  // Explorer Settings
+  "explorer.confirmDragAndDrop": false,
+  "explorer.autoReveal": true,
+  "explorer.compactFolders": false,
+  // Breadcrumbs
+  "breadcrumbs.enabled": true,
+  // Window Settings
+  "window.openFoldersInNewWindow": "off",
+  "window.commandCenter": false,
+  // Settings Sync
+  "settingsSync.ignoredSettings": [
+    "r.rpath.windows",
+    "r.rterm.windows"
+  ],
+  // Azure Settings
+  "@azure.argTenant": "",
+  // R-Specific Settings (radian)
+  "r.rterm.mac": "/Users/bevin/miniconda3/envs/radian/bin/radian",
+  "r.alwaysUseActiveTerminal": true,
+  "r.rterm.option": [],
+  "r.bracketedPaste": true,
+  "r.plot.useHttpgd": true,
+  "r.lsp.debug": true,
+  "r.lsp.diagnostics": true,
+  "[r]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "REditorSupport.r"
+  },
+  // Python-Specific Settings
+  "python.defaultInterpreterPath": "/Users/bevin/miniconda3/bin/python",
+  "python.venvPath": "/Users/bevin/miniconda3/bin/python",
+  "window.autoDetectColorScheme": true,
+  "terminal.integrated.inheritEnv": false,
+  "github.copilot.enable": {
+    "*": false,
+    "quarto": false
+  },
+  "workbench.layoutControl.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "window.customTitleBarVisibility": "windowed",
+  // Path Autocompletion
+  "path-autocomplete.pathMappings": {
+    "/": "/",
+    "./": "${folder}"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "cSpell.userWords": [
+    "ggplot",
+    "Manuelpillai",
+    "Tidyverse"
+  ]
+}
