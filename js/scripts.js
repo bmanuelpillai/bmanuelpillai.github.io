@@ -1,31 +1,3 @@
-// Toggle level content visibility
-function toggleLevel(levelNum) {
-  const content = document.querySelector(`#level-${levelNum} .level-content`);
-  if (content) {
-    content.classList.toggle('active');
-  }
-}
-
-// Activate a specific level
-function activateLevel(levelNum) {
-  // Hide all level contents
-  document.querySelectorAll('.level-content').forEach(content => {
-    content.classList.remove('active');
-  });
-  // Show the target level content
-  const targetContent = document.querySelector(`#level-${levelNum} .level-content`);
-  if (targetContent) {
-    targetContent.classList.add('active');
-  }
-  // Scroll to the level
-  const targetLevel = document.querySelector(`#level-${levelNum}`);
-  if (targetLevel) {
-    targetLevel.scrollIntoView({
-      behavior: 'smooth'
-    });
-  }
-}
-
 // Toggle menu visibility
 function toggleMenu() {
   const menu = document.getElementById("main-navigation");
