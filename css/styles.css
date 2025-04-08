@@ -1,8 +1,8 @@
 /* Set Color Scheme referenced below */
 :root {
-    --primary-color: #0366d6;
+    --primary-color: #0d72e5;
     /* GitHub blue */
-    --secondary-color: #2ea44f;
+    --secondary-color: hwb(134 9% 34%);
     /* GitHub green */
     --dark-color: #24292e;
     /* Dark background color */

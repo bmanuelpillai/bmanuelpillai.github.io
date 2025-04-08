@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starting Place</title>
+  <title>Data Manipulation in R and Python</title>
   <!-- Link to the external CSS file -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -12,58 +12,66 @@
 <body>
   <!-- Top Bar-->
   <header>
-    <h1>Start Here</h1>
-    <h3>Get Comfortable Working with Dat</h3>
+    <h1>Data Manipulation in R and Python</h1>
+    <h3>Get Comfortable Working with Data in R and Python</h3>
     <div id="header-placeholder"></div>
   </header>
 
-  <!-- Start -->
-  <!-- VScode and VIM -->
+  <!-- Cleaning and Visualizing Data -->
   <h3>Cleaning and Visualizing Data</h3>
   <div class="path-option">
-    <p>The best place to start working with data is to clean and visualize that data. You should calculate descriptive
-      statistics on your dataset before you run any statistical tests.</p>
+    <p>The best place to start working with data is to clean and visualize it. You should calculate descriptive
+      statistics on your dataset before running any statistical tests.</p>
   </div>
 
-  <!--Why Learn VScode-->
-  <h3>Tidyverse</h3>
+  <!-- Tidyverse -->
+  <h3>Tidyverse (R)</h3>
   <div class="path-option">
-    <p>I think learning the Tidyverse is a great way to write readable code for manipulating code and works well with
-      ggplot to visualize that data. I recommend starting with this <a href="https://american-stat-412612.netlify.app/"
-        target="_blank">course</a> and this associated Youtube series <a
-        href="https://www.youtube.com/playlist?list=PL6FsZxVq54ERrlMRNE5aq2qUFH042fbuM" target="_blank">by Kelsey
-        Codes</a>. The course does a great job quickly getting you familiar with tidyverse and ggplot and provides
-      associated homeworks.</p>
-    <h3>Frequently Used Functions to Start</h3>
+    <p>
+      Learning the Tidyverse is a great way to write clean, readable R code for data manipulation. It also works
+      seamlessly with ggplot2 for data visualization.
+    </p>
+    <p>
+      I recommend starting with this <a href="https://american-stat-412612.netlify.app/" target="_blank">course</a> and
+      this associated YouTube series <a href="https://www.youtube.com/playlist?list=PL6FsZxVq54ERrlMRNE5aq2qUFH042fbuM"
+        target="_blank">by Kelsey Codes</a>.
+      The course quickly introduces you to Tidyverse and ggplot and provides practical exercises.
+    </p>
+
+    <h4>Frequently Used Tidyverse Functions</h4>
     <ul>
-      <li>select()
-        <ul>
-          <li>Used to select specific columns from a dataset</li>
-        </ul>
-      </li>
-      <li>filter()
-        <ul>
-          <li>Used to filter rows based on specific conditions</li>
-        </ul>
-      </li>
-      <li>pivot_longer()
-        <ul>
-          <li>Transforms wide data into long format</li>
-        </ul>
-      </li>
-      <li>pivot_wider()
-        <ul>
-          <li>transforms long data into wide format</li>
-        </ul>
-      </li>
-      <li>ggplot()
-        <ul>
-          <li>Use this to start plotting and add + to add layers</li>
-        </ul>
-      </li>
+      <li>select() – Choose specific columns</li>
+      <li>filter() – Filter rows based on conditions</li>
+      <li>mutate() – Create or transform variables</li>
+      <li>arrange()– Sort data by column values</li>
+      <li>pivot_longer()– Reshape wide data into long format</li>
+      <li>pivot_wider() – Reshape long data into wide format</li>
+      <li>ggplot() – Build layered plots using + to add elements</li>
+    </ul>
   </div>
+
+  <!-- Pandas -->
+  <h3>Pandas (Python)</h3>
+  <div class="path-option">
+    <p>
+      Data manipulation in Python using pandas</code> is conceptually similar to using base R or the Tidyverse.
+      Once you're comfortable with one language, transitioning to the other becomes easier.
+    </p>
+
+    <h4>Frequently Used Pandas Functions</h4>
+    <ul>
+      <li>df[['col1', 'col2']]– Select specific columns</li>
+      <li>df[df['col'] == value]– Filter rows based on conditions</li>
+      <li>df.assign() – Create or modify columns</li>
+      <li>df.sort_values() – Sort data by column values</li>
+      <li>df.melt() – Reshape wide data into long format</li>
+      <li>df.pivot() or df.pivot_table() – Reshape long data into wide format</li>
+      <li>df.plot() or use seaborn/matplotlib – Create plots (analogous to ggplot)</li>
+    </ul>
   </div>
+
   <a href="#" class="btn" onclick="scrollToTop()">Back to Top</a>
+
   <!-- Link to External JavaScript File -->
   <script src="js/scripts.js"></script>
 </body>

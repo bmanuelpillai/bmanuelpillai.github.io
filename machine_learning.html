@@ -26,24 +26,33 @@
       clean your data into features and target. After that learn the different ML algorithms and when to use them.</p>
   <h3>Types of Machine Learning Algorithms</h3>
   <ul>
-    <li>Supervised Learning
+    <li><strong>Supervised Learning</strong>
       <ul>
       <li>Classification: Logistic Regression, Decision Trees, Support Vector Machines (SVM)</li>
       <li>Regression: Linear Regression, Random Forest Regressor, Gradient Boosting</li>
       </ul>
     </li>
-    <li>Unsupervised Learning
+    <li><strong>Unsupervised Learning</strong>
       <ul>
       <li>Clustering: K-Means Clustering, Hierarchical Clustering</li>
       <li>Dimensionality Reduction: Principal Component Analysis (PCA)</li>
       </ul>
     </li>
-    <li>Reinforced Learning
+    <li><strong>Reinforced Learning</strong>
       <ul>
-      <li>Large Lanuage Models</li>
+      <li>Large Language Models</li>
       </ul>
     </li>
   </ul>
+  <h3>Data Splitting</h3>
+  <div>
+    <p>Divide your data into the following subsets:</p>
+    <ul>
+      <li><strong>Training Data:</strong> Used for model development.</li>
+      <li><strong>Validation Data:</strong> Used for tuning model parameters and preventing overfitting.</li>
+      <li><strong>Testing Data:</strong> Used for evaluating the final model's performance on unseen data.</li>
+    </ul>
+  </div>
     <h3 style="text-align: center;">Choose What ML Algorithm Is Right For You</h3>
     <img src="images/ml.png" alt="Machine Learning Algos"
       style="max-width: 75%; height: auto; display: block; margin: 0 auto;">
@@ -58,6 +67,33 @@
   <div>
     <p>Neural Networks are used for deep learning and are fairly advanced. The 2 widely used deep learning frameworks
       are PyTorch and Tensorflow</p>
+<h3>Basic Hyperparameters in Neural Networks</h3>
+<ul>
+  <li>
+    <strong>Learning Rate:</strong> Controls how quickly the model updates its weights.
+    <ul>
+      <li>Too high – the model may overshoot and fail to converge (it bounces around).</li>
+      <li>Too low – the model converges very slowly and may get stuck in local minima.</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Batch Size:</strong> Number of training examples used in one update of model weights.
+    <ul>
+      <li><strong>Stochastic Gradient Descent (SGD):</strong> Batch size = 1</li>
+      <li><strong>Mini-batch SGD:</strong> Batch size > 1 but smaller than the full dataset</li>
+      <li><strong>Full-batch:</strong> Entire dataset used (rare due to memory constraints)</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Epoch:</strong> One complete pass through the entire training dataset.
+    <ul>
+      <li>Example: 1,000 samples / batch size 100 = 10 iterations per epoch</li>
+    </ul>
+  </li>
+</ul>
+
     <p>Josh Starmer has a great course on YouTube that walks you through principles of machine learning <a
         href="https://www.youtube.com/playlist?list=PLblh5JKOoLUICTaGLRoHQDuF_7q2GfuJF" target="_blank">here</a>.</p>
   </div>
