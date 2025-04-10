@@ -13,7 +13,7 @@
   <!-- Top Bar-->
   <header>
     <h1>Python Environments</h1>
-    <h3>Using Poetry to Manage Dependencies</h3>
+    <h3>Using Poetry and Conda to Manage Dependencies</h3>
     <div id="header-placeholder"></div>
   </header>
 
@@ -38,7 +38,7 @@
 
   <!-- Install -->
   <div>
-    <h3>Installation</h3>
+    <h3>Poetry Installation</h3>
     <ul>
       <li>Download <a href="https://www.python.org/downloads/" target="_blank">Python</a> onto your computer</li>
       <li>You want to get a <a href="https://pip.pypa.io/en/stable/installation/" target="_blank">package manager
@@ -65,6 +65,33 @@
   poetry update
   </pre>
     <p>Use pyenv if you need to use a different version of python than the one that is on your system.</p>
+  <!-- General Workflow using Conda -->
+  <div>
+    <h3>Use Conda to Manage Dependencies for all Programming languages</h3>
+    <p>Conda is similar to poetry just can be for more than just python package packages. I think both are really good and knowing a bit about both can allow you to use whatever the rest of your team is using.</p>
+    <pre>
+    # Create a new conda environment
+    conda create --name myenv python=3.9
+
+    # Activate the environment
+    conda activate myenv
+
+    # Install packages in your conda environment
+    conda install package_name
+
+    # Export environment for reproducibility
+    conda env export > environment.yaml
+
+    # Create environment from file
+    conda env create -f environment.yaml
+
+    # Update all packages in the environment
+    conda update --all
+
+    # Remove an environment
+    conda env remove --name myenv
+  </pre>
+  </div>
     <a href="#" class="btn" onclick="scrollToTop()">Back to Top</a>
     <!-- Link to External JavaScript File -->
     <script src="js/scripts.js"></script>
