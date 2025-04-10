@@ -39,18 +39,99 @@
       with the main benefit being opening you up to use
     </p>
   </div>
+
+  <!-- Intro to Navigating your Terminal -->
+  <div class="command-section">
+  <h3><code>pwd</code> (Print Working Directory)</h3>
+  <p>This command shows your current location in the file system.</p>
+  <pre>$ pwd
+  /Users/username/Documents</pre>
+  </div>
+
+  <div class="command-section">
+    <h3><code>ls</code> (List)</h3>
+    <p>Lists all files and directories in your current location.</p>
+    <pre>$ ls
+  Desktop  Documents  Downloads  Pictures</pre>
+    <p>Add options like <code>-l</code> for detailed view or <code>-a</code> to show hidden files:</p>
+    <pre>$ ls -la</pre>
+  </div>
+
+  <div class="command-section">
+    <h3><code>cd</code> (Change Directory)</h3>
+    <p>Moves you to a different directory.</p>
+    <pre>$ cd Documents</pre>
+  </div>
+
+  <div class="command-section">
+    <h3><code>cd ..</code></h3>
+    <p>Moves up one directory level (to the parent directory).</p>
+    <pre>$ cd ..</pre>
+  </div>
+
+  <h2>File Management</h2>
+
+  <div class="command-section">
+    <h3><code>mv</code> (Move)</h3>
+    <p>Moves files or directories to a new location, or renames them.</p>
+    <pre>
+  # Move a file
+  $ mv file.txt Documents/
+
+  # Rename a file
+  $ mv oldname.txt newname.txt</pre>
+  </div>
+
+  <h2>Package Management</h2>
+
+  <div class="command-section">
+    <h3><code>pip</code></h3>
+    <p>Package installer for Python. Use it to install Python libraries.</p>
+    <pre>
+  # Install a package
+  $ pip install numpy
+
+  # List installed packages
+  $ pip list</pre>
+  </div>
+
+  <div class="command-section">
+    <h3><code>brew</code> (Homebrew)</h3>
+    <p>Package manager for macOS (and Linux). Use it to install software.</p>
+    <pre>
+  # Install software
+  $ brew install git
+
+  # Update Homebrew
+  $ brew update
+
+  # Upgrade installed packages
+  $ brew upgrade</pre>
+  </div>
+
+  <h2>Tips for Effective Terminal Use</h2>
+
+  <div class="tip">
+    <ul>
+      <li>Tab to autocomplete (useful for completing file paths)</li>
+      <li>Press the up arrow to recall previously commands</li>
+      <li>Use <code>clear</code> to clear screen</li>
+      <li>Create aliases for frequently used commands in your <code>.bashrc</code> or <code>.zshrc</code> file</li>
+    </ul>
+  </div>
+  </body>
   <!-- Commonly Used CLI tools -->
   <div>
     <h3>Useful tools for developers</h3>
     <div class="path-option" <div class="path-option">
       <ul>
-        <li><a href="https://www.raycast.com/" target="_blank">Raycast</a></li>
+        <li><a href="https://www.raycast.com/" target="_blank">Raycast (MacOS)</a></li>
         <ul>
           <li>Use Shortcuts to Launch Apps</li>
           <li>Quickly switch between your browser and code editor</li>
         </ul>
         </li>
-        <li><a href="https://ghostty.org/" target="_blank">Ghostty Terminal</a></li>
+        <li><a href="https://ghostty.org/" target="_blank">Ghostty Terminal (MacOS)</a></li>
         <ul>
           <li>Really fast terminal</li>
           <li>Supports multiple tabs</li>
