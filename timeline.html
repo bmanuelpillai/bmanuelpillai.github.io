@@ -8,21 +8,29 @@
   <!-- Link to the external CSS file -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
-  <!-- Top Bar-->
-  <header>
-    <h1>Programming and Data Science Learning Path</h1>
-    <h3>Four Phases Building <br> Foundational Programming Skills</h3>
-    <div id="header-placeholder"></div>
-  </header>
+<!-- Top Bar-->
+<header>
+  <h1>Programming and Data Science Learning Path</h1>
+  <h3>Four Phases Building <br> Foundational Programming Skills</h3>
+  <div id="header-placeholder"></div>
+</header>
 
-  <!-- Start -->
+<!-- Start -->
+
 <body>
-  <div class="phase">
-    <h2>Phase 1: Getting Started</h2>
-    <p> Get comfortable working with data. You should be able to manipulate a data frame easily such as filter rows, select columns, create new columns, visualize your data, and calculate basic statistics.</p>
-    <p>The next big milestone would be to get comfortable working with functions. Using functions will revolutionize how you program. A first, it may seem like writing functions takes way more time but in the long-term functions make your code more readable, less prone to bugs, and easier for you to comeback to.</p>
+  <div class="level" id="level-1">
+    <div class="level-header" onclick="toggleLevel(2)">
+      <div class="level-number">1</div>
+      <h2 class="level-title">Phase 1: Getting Started</h2>
+    </div>
+    <p> Get comfortable working with data. You should be able to manipulate a data frame easily such as filter rows,
+      select columns, create new columns, visualize your data, and calculate basic statistics.</p>
+    <p>The next big milestone would be to get comfortable working with functions. Using functions will revolutionize how
+      you program. A first, it may seem like writing functions takes way more time but in the long-term functions make
+      your code more readable, less prone to bugs, and easier for you to comeback to.</p>
     <ul>
-      <li>Start with this <a href="https://american-stat-412612.netlify.app/" target="_blank">Statistical Programming Course</a></li>
+      <li>Start with this <a href="https://american-stat-412612.netlify.app/" target="_blank">Statistical Programming
+          Course</a></li>
       <ul>
         <li>Complete the homework assignments</li>
       </ul>
@@ -34,7 +42,8 @@
           <li>Learn basics of Pandas and NumPy in Python</li>
           <li>Use Poetry to manage Python dependencies</li>
           <li>Complete ML tutorials on <a href="https://www.kaggle.com/learn" target="_blank">Kaggle</a></li>
-          <li>Read through <a href="https://scikit-learn.org/stable/user_guide.html"> Sci-KitLearn Documentation</a></li>
+          <li>Read through <a href="https://scikit-learn.org/stable/user_guide.html"> Sci-KitLearn Documentation</a>
+          </li>
           <li>Participate in Kaggle learning competitions</li>
           <li>Study how experts approach regression and classification tasks</li>
         </ul>
@@ -42,13 +51,19 @@
       <li>Consider learning SQL to efficiently manage and query large datasets</li>
     </ul>
     <div class="note">
-      <strong>Note:</strong> Getting comfortable working with data is probably the hardest part. You will start out being uncomfortable with the syntax, having to constantly look things up, and getting frustrated. Remember this is the hardest part and you will be gaining a lot of momentum going forwards.</div>
+      <strong>Note:</strong> Getting comfortable working with data is probably the hardest part. You will start out
+      being uncomfortable with the syntax, having to constantly look things up, and getting frustrated. Remember this is
+      the hardest part and you will be gaining a lot of momentum going forwards.
+    </div>
   </div>
-
-  <div class="phase">
-    <h2>Phase 2: Advancing Your Skills</h2>
+  <div class="level" id="level-2">
+    <div class="level-header" onclick="toggleLevel(2)">
+      <div class="level-number">2</div>
+      <h2 class="level-title">Phase 2: Advancing your skills</h2>
+    </div>
     <ul>
-      <li>Read Hadley Wickham's  <a href="https://adv-r.hadley.nz/" target="_blank">Advanced R</a> and <a href="https://r-pkgs.org/" target="_blank">R Packages</a></li>
+      <li>Read Hadley Wickham's <a href="https://adv-r.hadley.nz/" target="_blank">Advanced R</a> and <a
+          href="https://r-pkgs.org/" target="_blank">R Packages</a></li>
       <ul>
         <li>Work towards creating well-documented Functions to share with others</li>
       </ul>
@@ -61,16 +76,22 @@
           <li>Simple bash scripting</li>
         </ul>
       </li>
-      <li><em>(Optional)</em> Read <a href="https://edu.anarcho-copy.org/Algorithm/grokking-algorithms-illustrated-programmers-curious.pdf" target="_blank">"Grokking Algorithms"</a> to understand basic data structures and algorithms</li>
+      <li><em>(Optional)</em> Read <a
+          href="https://edu.anarcho-copy.org/Algorithm/grokking-algorithms-illustrated-programmers-curious.pdf"
+          target="_blank">"Grokking Algorithms"</a> to understand basic data structures and algorithms</li>
       <li>Focus on refining your statistics skills simultaneously</li>
     </ul>
     <div class="note">
-      <strong>Note:</strong> This is really useful if you share code with others and do a lot of data cleaning, or other repetitive coding tasks
+      <strong>Note:</strong> This is really useful if you share code with others and do a lot of data cleaning, or other
+      repetitive coding tasks
     </div>
   </div>
 
-  <div class="phase">
-    <h2>Phase 3: Integrate your new skills in your research</h2>
+  <div class="level" id="level-3">
+    <div class="level-header" onclick="toggleLevel(2)">
+      <div class="level-number">3</div>
+      <h2 class="level-title">Phase 3: Apply your skills to research</h2>
+    </div>
     <ul>
       <li>Balance coding skills with research questions and statistical knowledge</li>
       <li>Explore Bayesian frameworks that require computational power</li>
@@ -82,12 +103,15 @@
       </li>
     </ul>
     <div class="note">
-      <strong>Note:</strong> These 3 phases are the most important to have a strong foundation to data science. The next phase  is a collection of things that I found useful in my own research.
+      <strong>Note:</strong> These 3 phases are the most important to have a strong foundation to data science. The next
+      phase is a collection of things that I found useful in my own research.
     </div>
   </div>
-
-  <div class="phase">
-    <h2>Phase 4: Optimization and Customization</h2>
+  <div class="level" id="level-4">
+    <div class="level-header" onclick="toggleLevel(2)">
+      <div class="level-number">4</div>
+      <h2 class="level-title">Phase 4: Optimization and Customization</h2>
+    </div>
     <ul>
       <li>Switch to VS Code as your editor</li>
       <li>Experiment with Vim motions</li>
@@ -100,7 +124,8 @@
           <li>Master cloud computing services (AWS or Azure)</li>
         </ul>
       </li>
-      <li>Try <a href="https://adventofcode.com/" target="_blank">Advent of Code</a> if you want to challenge yourself or learn a new language</li>
+      <li>Try <a href="https://adventofcode.com/" target="_blank">Advent of Code</a> if you want to challenge yourself
+        or learn a new language</li>
     </ul>
   </div>
   <!-- Back to Top button -->
@@ -111,4 +136,5 @@
   <!-- Link to External JavaScript File -->
   <script src="js/scripts.js"></script>
 </body>
+
 </html>
