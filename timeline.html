@@ -8,6 +8,7 @@
   <!-- Link to the external CSS file -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <!-- Top Bar-->
 <header>
   <h1>Programming and Data Science Learning Path</h1>
@@ -15,9 +16,8 @@
   <div id="header-placeholder"></div>
 </header>
 
-<!-- Start -->
-
 <body>
+  <!-- Start -->
   <div class="level" id="level-1">
     <div class="level-header" onclick="toggleLevel(1)">
       <div class="level-number">1</div>
@@ -59,89 +59,91 @@
         the hardest part and you will be gaining a lot of momentum going forwards.
       </div>
     </div>
-    <div class="level" id="level-2">
-      <div class="level-header" onclick="toggleLevel(2)">
-        <div class="level-number">2</div>
-        <h2 class="level-title">Phase 2: Advancing your skills</h2>
-      </div>
-      <div class="level-content active">
-        <ul>
-          <li>Read Hadley Wickham's <a href="https://adv-r.hadley.nz/" target="_blank">Advanced R</a> and <a
-              href="https://r-pkgs.org/" target="_blank">R Packages</a></li>
-          <ul>
-            <li>Work towards creating well-documented Functions to share with others</li>
-          </ul>
-          <li>Learn about non-standard evaluation for using tidyverse syntax in functions</li>
-          <li>Develop debugging skills for functions</li>
-          <li>Get comfortable with:
-            <ul>
-              <li>Git branches, rebasing, and pull requests</li>
-              <li>Command-line tools and terminal navigation</li>
-              <li>Simple bash scripting</li>
-            </ul>
-          </li>
-          <li><em>(Optional)</em> Read <a
-              href="https://edu.anarcho-copy.org/Algorithm/grokking-algorithms-illustrated-programmers-curious.pdf"
-              target="_blank">"Grokking Algorithms"</a> to understand basic data structures and algorithms</li>
-          <li>Focus on refining your statistics skills simultaneously</li>
-        </ul>
-        <div class="note">
-          <strong>Note:</strong> This is really useful if you share code with others and do a lot of data cleaning, or
-          other
-          repetitive coding tasks
-        </div>
-      </div>
+  </div>
+
+  <div class="level" id="level-2">
+    <div class="level-header" onclick="toggleLevel(2)">
+      <div class="level-number">2</div>
+      <h2 class="level-title">Phase 2: Writing Cleaner Code</h2>
     </div>
-
-
-    <div class="level" id="level-3">
-      <div class="level-header" onclick="toggleLevel(3)">
-        <div class="level-number">3</div>
-        <h2 class="level-title">Phase 3: Apply your skills to research</h2>
-      </div>
-      <div class="level-content active">
+    <div class="level-content active">
+      <ul>
+        <li>Read Hadley Wickham's <a href="https://adv-r.hadley.nz/" target="_blank">Advanced R</a> and <a
+            href="https://r-pkgs.org/" target="_blank">R Packages</a></li>
         <ul>
-          <li>Balance coding skills with research questions and statistical knowledge</li>
-          <li>Explore Bayesian frameworks that require computational power</li>
-          <li>Learn to use:
-            <ul>
-              <li>High-performance computing clusters (if available)</li>
-              <li>AWS or Azure cloud computing</li>
-            </ul>
-          </li>
+          <li>Work towards creating well-documented Functions to share with others</li>
         </ul>
-        <div class="note">
-          <strong>Note:</strong> These 3 phases are the most important to have a strong foundation to data science. The
-          next
-          phase is a collection of things that I found useful in my own research.
-        </div>
-      </div>
-      <div class="level" id="level-4">
-        <div class="level-header" onclick="toggleLevel(4)">
-          <div class="level-number">4</div>
-          <h2 class="level-title">Phase 4: Optimization and Customization</h2>
-        </div>
-        <div class="level-content active">
+        <li>Learn about non-standard evaluation for using tidyverse syntax in functions</li>
+        <li>Develop debugging skills for functions</li>
+        <li>Get comfortable with:
           <ul>
-            <li>Switch to VS Code as your editor</li>
-            <li>Experiment with Vim motions</li>
-            <li>Customize your terminal environment</li>
-            <li>Watch educational videos about interesting projects</li>
-            <li>Participate in Kaggle projects and study other people's solutions</li>
-            <li>For advanced software development:
-              <ul>
-                <li>Learn Docker containers (like a box to package everything you need to run a piece of software)</li>
-                <li>Master cloud computing services (AWS or Azure)</li>
-              </ul>
-            </li>
-            <li>Try <a href="https://adventofcode.com/" target="_blank">Advent of Code</a> if you want to challenge
-              yourself
-              or learn a new language</li>
+            <li>Git branches, rebasing, and pull requests</li>
+            <li>Command-line tools and terminal navigation</li>
+            <li>Simple bash scripting</li>
           </ul>
-        </div>
+        </li>
+        <li><em>(Optional)</em> Read <a
+            href="https://edu.anarcho-copy.org/Algorithm/grokking-algorithms-illustrated-programmers-curious.pdf"
+            target="_blank">"Grokking Algorithms"</a> to understand basic data structures and algorithms</li>
+        <li>Focus on refining your statistics skills simultaneously</li>
+      </ul>
+      <div class="note">
+        <strong>Note:</strong> This is really useful if you share code with others and do a lot of data cleaning, or
+        other
+        repetitive coding tasks
       </div>
     </div>
   </div>
+
+  <div class="level" id="level-3">
+    <div class="level-header" onclick="toggleLevel(3)">
+      <div class="level-number">3</div>
+      <h2 class="level-title">Phase 3: Apply your skills to research</h2>
+    </div>
+    <div class="level-content active">
+      <ul>
+        <li>Balance coding skills with research questions and statistical knowledge</li>
+        <li>Explore Bayesian frameworks that require computational power</li>
+        <li>Learn to use:
+          <ul>
+            <li>High-performance computing clusters (if available)</li>
+            <li>AWS or Azure cloud computing</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="note"></div>
+        <strong>Note:</strong> These 3 phases are the most important to have a strong foundation to data science. The
+        next
+        phase is a collection of things that I found useful in my own research.
+      </div>
+    </div>
+  </div>
+
+  <div class="level" id="level-4">
+    <div class="level-header" onclick="toggleLevel(4)">
+      <div class="level-number">4</div>
+      <h2 class="level-title">Phase 4: Optimization and Customization</h2>
+    </div>
+    <div class="level-content active">
+      <ul>
+        <li>Switch to VS Code as your editor</li>
+        <li>Experiment with Vim motions</li>
+        <li>Customize your terminal environment</li>
+        <li>Watch educational videos about interesting projects</li>
+        <li>Participate in Kaggle projects and study other people's solutions</li>
+        <li>For advanced software development:
+          <ul>
+            <li>Learn Docker containers (like a box to package everything you need to run a piece of software)</li>
+            <li>Master cloud computing services (AWS or Azure)</li>
+          </ul>
+        </li>
+        <li>Try <a href="https://adventofcode.com/" target="_blank">Advent of Code</a> if you want to challenge
+          yourself
+          or learn a new language</li>
+      </ul>
+    </div>
+  </div>
+
   <!-- Back to Top button -->
   <div style="text-align: center; margin-top: 20px;">
     <a href="#" class="btn" onclick="scrollToTop()">Back to Top</a>
@@ -150,5 +152,4 @@
   <!-- Link to External JavaScript File -->
   <script src="js/scripts.js"></script>
 </body>
-
 </html>
