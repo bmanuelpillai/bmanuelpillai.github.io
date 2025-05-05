@@ -5,23 +5,17 @@
     --secondary-color: hwb(134 9% 34%);
     /* GitHub green */
     --dark-color: #24292e;
-    /* Dark background color */
     --light-color: #f6f8fa;
-    /* Light background color */
     --border-color: #e1e4e8;
-    /* Border color */
     --text-color: #24292e;
-    /* Default text color */
     --text-light: #586069;
-    /* Lighter text color */
 }
 
-/* Set Sizes for all Elements */
+/* Global Reset and Sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Ensures padding and border are included in element width and height */
 }
 
 /* Body */
@@ -33,11 +27,12 @@ body {
     padding: 0 20px;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* Dark Mode */
 .dark-mode {
-    background-color: black;
+    background-color: #121212;
     color: white;
 }
 
@@ -49,158 +44,33 @@ pre {
     border-radius: 5px;
     overflow-x: auto;
     font-family: monospace;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Dark Mode for Code Blocks */
 .dark-mode pre {
     background-color: #222;
     color: #ddd;
     border: 1px solid #444;
 }
 
-/* Level Content */
-.level-content {
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 15px;
-    border-radius: 5px;
-    margin-top: 10px;
+/* Code scrollbar aesthetics */
+pre::-webkit-scrollbar {
+    height: 6px;
 }
 
-/* Dark Mode for Level Content */
-.dark-mode .level-content {
-    background-color: #222;
-    color: #ddd;
-    border: 1px solid #444;
+pre::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
 }
 
-/* Level Header */
-.level-header {
-    background-color: #e0e0e0;
-    color: #111;
-    padding: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-}
-
-/* Dark mode Level Header */
-.dark-mode .level-header {
-    background-color: #333;
-    color: #fff;
-    border: 1px solid #555;
-}
-
-/* Level Title */
-.level-title {
-    font-size: 1.5em;
-    margin-left: 10px;
-    font-weight: bold;
-}
-
-/* Level Number */
-.level-number {
-    background-color: #666;
-    color: white;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 50%;
-}
-
-/* Dark Mode Level Number */
-.dark-mode .level-number {
-    background-color: #888;
-    color: black;
-}
-
-/* Header */
-header {
-    background-color: var(--dark-color);
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
-    position: relative;
-    margin: 0 -20px;
-}
-
-header::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
-}
-
-/* Container */
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 2rem 1.5rem;
-}
-
-/* Header1 */
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Header2 */
-h2 {
-    font-size: 1.8rem;
-    margin: 2rem 0 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 1px solid var(--border-color);
-}
-
-/* Header3 */
-h3 {
-    font-size: 1.4rem;
-    margin: 1.5rem 0 0.75rem;
-}
-
-/* Header4 */
-h4 {
-    font-size: 1.2rem;
-    margin: 1.2rem 0 0.6rem;
-}
-
-/* Paragraphs */
-p {
-    margin-bottom: 1rem;
-    padding-left: 0.5rem;
-    font-size: 1.1rem;
-}
-
-/* Lists */
-ul, ol {
-    margin-bottom: 1rem;
-    padding-left: 2.5rem;
-    font-size: 1.1rem;
-}
-
-
-/* Links */
-a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/*  Level Section  */
+/* Level Styling */
 .level {
     background-color: var(--light-color);
     border: 1px solid var(--border-color);
     border-radius: 5px;
     padding: 1.75rem;
     margin: 2rem 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .level:hover {
@@ -208,13 +78,24 @@ a:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Level Header (for clickable sections) */
+/* Level Header */
 .level-header {
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
     cursor: pointer;
     padding-left: 0.5rem;
+    background-color: #e0e0e0;
+    color: #111;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.dark-mode .level-header {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
 }
 
 .level-number {
@@ -230,35 +111,119 @@ a:hover {
     margin-right: 1rem;
 }
 
+.dark-mode .level-number {
+    background-color: #888;
+    color: black;
+}
+
 .level-title {
     font-size: 1.5rem;
+    font-weight: bold;
     margin: 0;
 }
 
-/* === Level Content (hidden until activated) === */
+/* Level Content */
 .level-content {
     display: none;
-    /* Initially hidden */
     padding: 1.25rem 1rem 1rem 1rem;
-    /* Increased padding with more on left */
+    background-color: #f9f9f9;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .level-content.active {
     display: block;
 }
 
-/* === Path Option (for different learning paths) === */
-path-option h4 {
+.dark-mode .level-content {
+    background-color: #222;
+    color: #ddd;
+    border: 1px solid #444;
+}
+
+/* Header */
+header {
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    position: relative;
+    margin: 0 -20px;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+}
+
+header h1 {
+    margin-top: 20px;
+    color: white;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+h3 {
+    font-size: 1.4rem;
+    margin: 1.5rem 0 0.75rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+    margin: 1.2rem 0 0.6rem;
     padding-left: 0.5rem;
-    /* Add left padding to headings */
 }
 
-.path-option p {
-    padding-left: 1rem;
-    /* Increased left padding for text in path options */
+/* Paragraphs and Lists */
+p {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    font-size: 1.1rem;
 }
 
-/* Highlighted Text */
+ul,
+ol {
+    margin-bottom: 1rem;
+    padding-left: 2.5rem;
+    font-size: 1.1rem;
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+/* Highlight */
 .highlight {
     background-color: rgba(3, 102, 214, 0.1);
     padding: 0.2rem 0.4rem;
@@ -266,7 +231,7 @@ path-option h4 {
     font-family: monospace;
 }
 
-/* Button Styling */
+/* Buttons */
 .btn {
     display: inline-block;
     background-color: var(--secondary-color);
@@ -274,16 +239,18 @@ path-option h4 {
     padding: 0.5rem 1.25rem;
     border-radius: 5px;
     margin: 1.25rem 0.5rem;
-    transition: background-color 0.3s ease;
     font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:focus {
     background-color: #2c974b;
+    transform: translateY(-2px);
     text-decoration: none;
 }
 
-/*  Bullets  */
+/* Bullet Item */
 .bullet-item {
     display: flex;
     align-items: flex-start;
@@ -300,7 +267,12 @@ path-option h4 {
     margin-left: -1.1rem;
 }
 
-/* === Responsive Design (for smaller screens) === */
+/* Path Option */
+.path-option p {
+    padding-left: 1rem;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
     h1 {
         font-size: 2rem;
@@ -358,7 +330,7 @@ footer {
     margin-bottom: 0.5rem;
 }
 
-/*  Code snippet */
+/* Code Block */
 .code-block {
     background-color: var(--light-color);
     border: 1px solid var(--border-color);
@@ -369,7 +341,7 @@ footer {
     margin: 1.25rem 0;
 }
 
-/* Sidebar container */
+/* Sidebar */
 .sidebar {
     position: fixed;
     left: 0;
@@ -386,7 +358,7 @@ footer {
     transform: translateX(0);
 }
 
-/* Navigation styles */
+/* Nav */
 nav ul {
     list-style: none;
     padding: 0;
@@ -408,13 +380,6 @@ nav a {
 
 nav a:hover {
     background: rgba(255, 255, 255, 0.2);
-}
-
-/* Header */
-header h1 {
-    text-align: center;
-    margin-top: 20px;
-    color: white;
 }
 
 /* Table */
@@ -453,6 +418,3 @@ td {
     align-items: center;
     gap: 10px;
 }
-
-
-
