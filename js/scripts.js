@@ -41,6 +41,12 @@ document.addEventListener('DOMContentLoaded', function () {
     content.classList.add('active');
   });
 
+  // Attach level toggles
+  document.querySelectorAll('.level-header').forEach(header => {
+    const levelNumber = header.dataset.level;
+    header.addEventListener('click', () => toggleLevel(levelNumber));
+  });
+
   // Load the header
   fetch('header.html')
     .then(response => {
