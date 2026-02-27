@@ -24,6 +24,16 @@ function scrollToTop() {
   return false;
 }
 
+// Toggle learning path sections
+function toggleLevel(levelNumber) {
+  const level = document.getElementById(`level-${levelNumber}`);
+  if (!level) return;
+  const content = level.querySelector('.level-content');
+  if (content) {
+    content.classList.toggle('active');
+  }
+}
+
 // Initialize everything on DOMContentLoaded
 document.addEventListener('DOMContentLoaded', function () {
   // Open all level contents by default
