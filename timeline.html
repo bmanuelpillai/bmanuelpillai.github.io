@@ -9,17 +9,16 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
-<!-- Top Bar-->
-<header>
-  <h1>Programming and Data Science Learning Path</h1>
-  <h3>Four Phases Building <br> Foundational Programming Skills</h3>
-  <div id="header-placeholder"></div>
-</header>
-
 <body>
+  <!-- Top Bar-->
+  <header>
+    <h1>Programming and Data Science Learning Path</h1>
+    <h3>Four Phases Building <br> Foundational Programming Skills</h3>
+    <div id="header-placeholder"></div>
+  </header>
   <!-- Start -->
   <div class="level" id="level-1">
-    <div class="level-header" onclick="toggleLevel(1)">
+    <div class="level-header" data-level="1">
       <div class="level-number">1</div>
       <h2 class="level-title">Phase 1: Getting Started</h2>
     </div>
@@ -62,7 +61,7 @@
   </div>
 
   <div class="level" id="level-2">
-    <div class="level-header" onclick="toggleLevel(2)">
+    <div class="level-header" data-level="2">
       <div class="level-number">2</div>
       <h2 class="level-title">Phase 2: Writing Cleaner Code</h2>
     </div>
@@ -96,7 +95,7 @@
   </div>
 
   <div class="level" id="level-3">
-    <div class="level-header" onclick="toggleLevel(3)">
+    <div class="level-header" data-level="3">
       <div class="level-number">3</div>
       <h2 class="level-title">Phase 3: Apply your skills to research</h2>
     </div>
@@ -111,16 +110,15 @@
           </ul>
         </li>
       </ul>
-      <div class="note"></div>
+      <div class="note">
         <strong>Note:</strong> These 3 phases are the most important to have a strong foundation to data science. The
-        next
-        phase is a collection of things that I found useful in my own research.
+        next phase is a collection of things that I found useful in my own research.
       </div>
     </div>
   </div>
 
   <div class="level" id="level-4">
-    <div class="level-header" onclick="toggleLevel(4)">
+    <div class="level-header" data-level="4">
       <div class="level-number">4</div>
       <h2 class="level-title">Phase 4: Optimization and Customization</h2>
     </div>

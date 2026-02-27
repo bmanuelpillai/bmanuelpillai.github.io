@@ -24,11 +24,27 @@ function scrollToTop() {
   return false;
 }
 
+// Toggle learning path sections
+function toggleLevel(levelNumber) {
+  const level = document.getElementById(`level-${levelNumber}`);
+  if (!level) return;
+  const content = level.querySelector('.level-content');
+  if (content) {
+    content.classList.toggle('active');
+  }
+}
+
 // Initialize everything on DOMContentLoaded
 document.addEventListener('DOMContentLoaded', function () {
   // Open all level contents by default
   document.querySelectorAll('.level-content').forEach(content => {
     content.classList.add('active');
+  });
+
+  // Attach level toggles
+  document.querySelectorAll('.level-header').forEach(header => {
+    const levelNumber = header.dataset.level;
+    header.addEventListener('click', () => toggleLevel(levelNumber));
   });
 
   // Load the header
