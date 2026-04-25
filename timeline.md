@@ -6,9 +6,7 @@
 Get comfortable working with data. You should be able to manipulate a data frame easily such as filter rows,
 select columns, create new columns, visualize your data, and calculate basic statistics.
 
-The next big milestone would be to get comfortable working with functions. Using functions will revolutionize
-how
-you program. At first, it may seem like writing functions takes way more time but in the long-term functions make
+The next big milestone would be to get comfortable working with functions. Using functions will revolutionize how you program. At first, it may seem like writing functions takes way more time but in the long-term functions make
 your code more readable, less prone to bugs, and easier for you to comeback to.
 
 - Start with this [Statistical Programming
@@ -29,9 +27,7 @@ your code more readable, less prone to bugs, and easier for you to comeback to.
 - Consider learning SQL to efficiently manage and query large datasets
 
 **Note:** Getting comfortable working with data is probably the hardest part. You will start out
-being uncomfortable with the syntax, having to constantly look things up, and getting frustrated. Remember this
-is
-the hardest part and you will be gaining a lot of momentum going forwards.
+being uncomfortable with the syntax, having to constantly look things up, and getting frustrated. Remember this is the hardest part and you will be gaining a lot of momentum going forwards.
 ## Phase 2: Writing Cleaner Code
 
 - Read Hadley Wickham's [Advanced R](https://adv-r.hadley.nz/) and [R Packages](https://r-pkgs.org/)
@@ -47,9 +43,7 @@ the hardest part and you will be gaining a lot of momentum going forwards.
 - *(Optional)* Read ["Grokking Algorithms"](https://edu.anarcho-copy.org/Algorithm/grokking-algorithms-illustrated-programmers-curious.pdf) to understand basic data structures and algorithms
 - Focus on refining your statistics skills simultaneously
 
-**Note:** This is really useful if you share code with others and do a lot of data cleaning, or
-other
-repetitive coding tasks
+**Note:** This is really useful if you share code with others and do a lot of data cleaning, or other repetitive coding tasks
 ## Phase 3: Apply your skills to research
 
 - Balance coding skills with research questions and statistical knowledge

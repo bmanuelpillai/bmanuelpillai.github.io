@@ -29,7 +29,7 @@ VIM motions are a set of key bindings that let you quickly navigate and edit tex
 
 ### Why Learn VIM motions
 
-Learn VIM motions at first is very tough, despite how intuitive the controls are. It will likely reduce your
+Learning VIM motions at first is very tough, despite how intuitive the controls are. It will likely reduce your
 productivity
 for a bit until you get comfortable. One common argument that people have about why to learn VIM is that it will
 make you a faster programmer. I would argue that the best reason to learn VIM is that it reduces the amount of

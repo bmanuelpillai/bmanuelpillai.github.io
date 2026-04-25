@@ -7,7 +7,7 @@
 R is great but there are many packages that python has that R does not, especially when it comes to machine
 learning
 (scikit learn, PyTorch, etc.).
-One the biggest sticking points I experienced from going from R to python is managing virtual environments and
+One of the biggest sticking points I experienced from going from R to python is managing virtual environments and
 dependencies. In R a lot of this is done behind the scenes and you often do not have to worry about using an
 explicit
 package version for your code. Although in Python it is important to download specific versions of your
