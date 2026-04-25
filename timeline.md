@@ -1,9 +1,6 @@
 # Programming and Data Science Learning Path
 
-### Four Phases Building Foundational Programming Skills
-
-1
-
+*Four Phases Building Foundational Programming Skills*
 ## Phase 1: Getting Started
 
 Get comfortable working with data. You should be able to manipulate a data frame easily such as filter rows,
@@ -11,7 +8,7 @@ select columns, create new columns, visualize your data, and calculate basic sta
 
 The next big milestone would be to get comfortable working with functions. Using functions will revolutionize
 how
-you program. A first, it may seem like writing functions takes way more time but in the long-term functions make
+you program. At first, it may seem like writing functions takes way more time but in the long-term functions make
 your code more readable, less prone to bugs, and easier for you to comeback to.
 
 - Start with this [Statistical Programming
@@ -26,7 +23,7 @@ your code more readable, less prone to bugs, and easier for you to comeback to.
   - Learn basics of Pandas and NumPy in Python
   - Use Poetry to manage Python dependencies
   - Complete ML tutorials on [Kaggle](https://www.kaggle.com/learn)
-  - Read through  [Sci-KitLearn Documentation](https://scikit-learn.org/stable/user_guide.html)
+  - Read through [Sci-KitLearn Documentation](https://scikit-learn.org/stable/user_guide.html)
   - Participate in Kaggle learning competitions
   - Study how experts approach regression and classification tasks
 - Consider learning SQL to efficiently manage and query large datasets
@@ -35,9 +32,6 @@ your code more readable, less prone to bugs, and easier for you to comeback to.
 being uncomfortable with the syntax, having to constantly look things up, and getting frustrated. Remember this
 is
 the hardest part and you will be gaining a lot of momentum going forwards.
-
-2
-
 ## Phase 2: Writing Cleaner Code
 
 - Read Hadley Wickham's [Advanced R](https://adv-r.hadley.nz/) and [R Packages](https://r-pkgs.org/)
@@ -56,9 +50,6 @@ the hardest part and you will be gaining a lot of momentum going forwards.
 **Note:** This is really useful if you share code with others and do a lot of data cleaning, or
 other
 repetitive coding tasks
-
-3
-
 ## Phase 3: Apply your skills to research
 
 - Balance coding skills with research questions and statistical knowledge
@@ -69,9 +60,6 @@ repetitive coding tasks
 
 **Note:** These 3 phases are the most important to have a strong foundation to data science. The
 next phase is a collection of things that I found useful in my own research.
-
-4
-
 ## Phase 4: Optimization and Customization
 
 - Switch to VS Code as your editor

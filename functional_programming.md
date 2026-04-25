@@ -1,6 +1,6 @@
 # Introduction to Functional Programming in R
 
-### Working with Functions and Packages in R
+*Working with Functions and Packages in R*
 
 ## Topics Covered
 
@@ -8,9 +8,6 @@
 2. Control Flow with If, else
 3. Loops using map
 4. Packages using Devtools
-
-1
-
 ## Why Use Functions
 
 **Q. Why use functions when you can just copy and paste your code?**
@@ -43,9 +40,6 @@ easier for you to reuse code that you wrote before.
 ```
 
 More information on Functions can be found [here](https://jcoliver.github.io/learn-r/007-intro-functional-programming.html).
-
-2
-
 ## Control Flow in R
 
 **Q. What is control flow and why is it important?**
@@ -79,9 +73,6 @@ if (x >= 10) {
 
 More Information on Control Flow can be found
 [here](https://american-stat-412612.netlify.app/material/1-12-lecture/).
-
-3
-
 ## Loops
 
 Say you have a function and want to apply it to more than one thing, what do you do? One solution is to create
@@ -109,9 +100,6 @@ a loop.
 ```
 
 More information on Loops can be found [here](https://american-stat-412612.netlify.app/material/1-13-lecture/).
-
-4
-
 ## Level 2: Working with Packages
 
 ### Using Devtools

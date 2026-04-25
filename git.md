@@ -32,9 +32,7 @@ branches, you can work on different parts of a project independently, then merge
 
 ## 4 Levels of Version Control
 
-1
-
-## Getting Started with GitHub
+### Getting Started with GitHub
 
 GitHub GUI is great for 90% of what you'll be using Git for. Let's start with the basics:
 
@@ -87,9 +85,6 @@ Getting others' changes locally
 more](https://gist.github.com/ZoeKHarvey/96cc58d782df8ea1ee5cf4117e66282a)
 
 ![git workflow](images/git.webp)
-
-2
-
 ## Working with Branches
 
 The next level of working in Git would be to start using branches in Git. A branch is basically a copy of
@@ -113,9 +108,6 @@ and then combine them together.
 2. Commit changes to a branch
 3. Push changes to GitHub
 4. Merge a branch into main using a Pull Request
-
-3
-
 ## Advanced Git Features
 
 At this point, you understand the basics of Git, and the scale of the projects you work on are becoming
@@ -155,9 +147,6 @@ to your code, as well as opens up a bunch of advanced features that are a bit ha
 Desktop.
 
 A useful tool for using git in the command line is [lazygit](https://www.freecodecamp.org/news/how-to-use-lazygit-to-improve-your-git-workflow/) allowing you to use keyboard shortcuts instead of typing out entire git command.
-
-4
-
 ## Continuous Development using Git
 
 Once you start getting into the software side of coding, it is super useful to use advanced Git workflows

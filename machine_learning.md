@@ -1,6 +1,6 @@
 # Tools for Machine Learning in Python
 
-### Scikit-Learn, Tensorflow, Pytorch
+*Scikit-Learn, Tensorflow, Pytorch*
 
 ### Scikit-Learn
 
@@ -12,7 +12,7 @@ clean your data into features and target. After that learn the different ML algo
 ### Tidymodels
 
 TidyModels is similar to Scikit learn but in R and uses tidyverse principles.
-Read more about it here [here](https://www.tidymodels.org/start/models/).
+Read more about it [here](https://www.tidymodels.org/start/models/).
 
 ### Types of Machine Learning Algorithms
 

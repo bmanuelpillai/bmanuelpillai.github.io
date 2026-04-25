@@ -1,6 +1,6 @@
 # Data Manipulation in R and Python
 
-### Get Comfortable Working with Data in R and Python
+*Get Comfortable Working with Data in R and Python*
 
 ### Cleaning and Visualizing Data
 

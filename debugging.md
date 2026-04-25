@@ -1,6 +1,6 @@
 # Debugging in R
 
-### Squash bugs fast
+*Squash bugs fast*
 
 ### Learn to Debug R code
 

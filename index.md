@@ -1,6 +1,6 @@
 # My Philosophy of Coding as a Researcher
 
-### Coding as a Tool for Research
+*Coding as a Tool for Research*
 
 ## The Motivation to Learn to Code as a Researcher
 
@@ -10,6 +10,8 @@ When you first start to program it can feel really overwhelming. You aren't comf
 the hardest part of your programming journey. Once you gain experience and confidence as a programmer, you will feel like you can tackle any problem.
 
 ## How Scientists Should Approach Coding
+
+[How to learn programming - Advice for scientists | Clara Sousa-Silva and Lex Friedman](https://www.youtube.com/embed/ku0KGMabyYA)
 
 ## The Doors Coding Opens for Researchers
 
@@ -26,7 +28,7 @@ One of my favorite parts of coding is the community of developers and researcher
 ## Forest vs. Trees
 
 Don't mistake the forest for the trees. I think coding is especially fun for scientists because it isn't our main job. We use code as a tool to answer the
-questions that interest us, but our goal is not make the most optimized or well-written. You may happen to become
+questions that interest us, but our goal is not to make the most optimized or well-written. You may happen to become
 really good at coding as a byproduct of tackling your research questions, coding is just a mean to reach that goal.
 Write code first, then optimize it later if needed. Now, that is not to say that the code shouldn't be readable -- it
 should still be well documented so that others can work on it too.

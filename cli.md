@@ -1,6 +1,6 @@
 # Command Line Tools
 
-### Get Fast with the CLI
+*Get Fast with the CLI*
 
 ### Why Learn to Use CLI tools
 

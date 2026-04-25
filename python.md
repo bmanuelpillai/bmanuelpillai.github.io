@@ -1,6 +1,6 @@
 # Python Environments
 
-### Using Poetry and Conda to Manage Dependencies
+*Using Poetry and Conda to Manage Dependencies*
 
 ### Going From R to Python
 
@@ -13,12 +13,12 @@ explicit
 package version for your code. Although in Python it is important to download specific versions of your
 dependencies for
 each project.
-One method I really like it using poetry environments.
+One method I really like is using poetry environments.
 
 ### Poetry Installation
 
 - Download [Python](https://www.python.org/downloads/) onto your computer
-- You want to get a [package manager](https://pip.pypa.io/en/stable/installation/)for Python on your computer
+- You want to get a [package manager](https://pip.pypa.io/en/stable/installation/) for Python on your computer
 - Follow these instructions to get [Poetry](https://python-poetry.org/docs/) on your
   computer
 
@@ -41,7 +41,7 @@ Use pyenv if you need to use a different version of python than the one that is 
 
 ### Use Conda to Manage Dependencies for all Programming languages
 
-Conda is similar to poetry just can be for more than just python package packages. I think both are really good and knowing a bit about both can allow you to use whatever the rest of your team is using.
+Conda is similar to poetry just can be for more than just python packages. I think both are really good and knowing a bit about both can allow you to use whatever the rest of your team is using.
 
 ```
     # Create a new conda environment

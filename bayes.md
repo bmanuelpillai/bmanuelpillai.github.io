@@ -1,6 +1,6 @@
 # High Level Bayesian Inference
 
-### Modeling Framework
+*Modeling Framework*
 
 ### Recommended Resources to Learn Bayesian Inference
 
@@ -11,7 +11,7 @@ This free online textbook builds up your understanding of bayesian inference fro
 
 ### Introduction to Stan in R
 
-After you get a grasp of how bayesian inference works then it's time for you apply those methods to your own data. I recommend watching this video to get an introduction to using STAN in R to implement bayesian mdethods. Stan is a probability programming language which allows you to create statistical models.
+After you get a grasp of how bayesian inference works then it's time for you apply those methods to your own data. I recommend watching this video to get an introduction to using STAN in R to implement bayesian methods. Stan is a probability programming language which allows you to create statistical models.
 [Bayesian Modeling with Stan and R](https://www.youtube.com/watch?v=QqwCqPYbatA)
 
 ### Introduction to Numpyro in Python

@@ -1,10 +1,10 @@
 # Programmer's Toolbox
 
-### Useful Resources for Programmers
+*Useful Resources for Programmers*
 
 ### New tools
 
-Many times switching form a tool you are comfortable with to something new can feel overwhelming. You'll feel
+Many times switching from a tool you are comfortable with to something new can feel overwhelming. You'll feel
 unproductive and frustrated, but if you plan on coding in the long-term then this initial time spent will have
 huge benefits to you.
 
