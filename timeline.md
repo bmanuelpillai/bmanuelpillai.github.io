@@ -21,7 +21,7 @@ your code more readable, less prone to bugs, and easier for you to come back to.
   - Learn basics of Pandas and NumPy in Python
   - Use Poetry to manage Python dependencies
   - Complete ML tutorials on [Kaggle](https://www.kaggle.com/learn)
-  - Read through [Sci-KitLearn Documentation](https://scikit-learn.org/stable/user_guide.html)
+  - Read through [Scikit-Learn Documentation](https://scikit-learn.org/stable/user_guide.html)
   - Participate in Kaggle learning competitions
   - Study how experts approach regression and classification tasks
 - Consider learning SQL to efficiently manage and query large datasets

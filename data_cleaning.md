@@ -22,8 +22,8 @@ The course quickly introduces you to Tidyverse and ggplot and provides practical
 - filter(): Filter rows based on conditions
 - mutate(): Create or transform variables
 - arrange(): Sort data by column values
-- pivot\_longer(): Reshape wide data into long format
-- pivot\_wider(): Reshape long data into wide format
+- pivot_longer(): Reshape wide data into long format
+- pivot_wider(): Reshape long data into wide format
 - ggplot(): Build layered plots using + to add elements
 
 You should also look into creating [Quarto](https://quarto.org/docs/computations/r.html) or [Rmarkdown](https://www.datacamp.com/tutorial/r-markdown-tutorial) files to present your code in a nice looking report
@@ -38,9 +38,9 @@ Once you're comfortable with one language, transitioning to the other becomes ea
 - df[['col1', 'col2']]: Select specific columns
 - df[df['col'] == value]: Filter rows based on conditions
 - df.assign(): Create or modify columns
-- df.sort\_values(): Sort data by column values
+- df.sort_values(): Sort data by column values
 - df.melt(): Reshape wide data into long format
-- df.pivot() or df.pivot\_table(): Reshape long data into wide format
+- df.pivot() or df.pivot_table(): Reshape long data into wide format
 - df.plot() or use seaborn/matplotlib: Create plots (analogous to ggplot)
 
 [Back to Top](#)
