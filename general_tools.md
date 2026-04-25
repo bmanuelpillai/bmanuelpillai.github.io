@@ -33,7 +33,7 @@ Learning VIM motions at first is very tough, despite how intuitive the controls 
 productivity
 for a bit until you get comfortable. One common argument that people have about why to learn VIM is that it will
 make you a faster programmer. I would argue that the best reason to learn VIM is that it reduces the amount of
-time between when an idea pops into your mind and when you fingers can start to type it out.
+time between when an idea pops into your mind and when your fingers can start to type it out.
 
 - [VIM extension for
   VScode](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim)

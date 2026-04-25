@@ -135,7 +135,7 @@ More information on merging vs rebasing: [Link](https://www.atlassian.com/git/tu
 When you want to rebase 2 branches it is super useful to squash (combined) as many commits as you can
 together. Rebasing works by reapplying commits on top of a new base commit, so basically takes the
 commits from branch B and stacks them onto branch A. This is a lot easier if you have fewer commits,
-and it also makes it easier for you later one when you want to look at your commit history and see
+and it also makes it easier for you later on when you want to look at your commit history and see
 what you did before.
 
 More Information on Squashing Commits: [Link](https://www.git-tower.com/learn/git/faq/git-squash)

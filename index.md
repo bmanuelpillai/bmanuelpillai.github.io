@@ -6,7 +6,7 @@
 
 ### The Start Is The Hardest Part
 
-When you first start to program it can feel really overwhelming. You aren't comfortable with the language, you have to look up everything before you can do what you want. You'll see more experienced programmers doing things a lot faster and in ways you've never seen before. It can be feel really overwhelming, but rest assured this will be
+When you first start to program it can feel really overwhelming. You aren't comfortable with the language, you have to look up everything before you can do what you want. You'll see more experienced programmers doing things a lot faster and in ways you've never seen before. It can feel really overwhelming, but rest assured this will be
 the hardest part of your programming journey. Once you gain experience and confidence as a programmer, you will feel like you can tackle any problem.
 
 ## How Scientists Should Approach Coding
@@ -28,7 +28,7 @@ One of my favorite parts of coding is the community of developers and researcher
 ## Forest vs. Trees
 
 Don't mistake the forest for the trees. I think coding is especially fun for scientists because it isn't our main job. We use code as a tool to answer the
-questions that interest us, but our goal is not to make the most optimized or well-written. You may happen to become
+questions that interest us, but our goal is not to make the most optimized or well-written code. You may happen to become
 really good at coding as a byproduct of tackling your research questions, coding is just a mean to reach that goal.
 Write code first, then optimize it later if needed. Now, that is not to say that the code shouldn't be readable -- it
 should still be well documented so that others can work on it too.

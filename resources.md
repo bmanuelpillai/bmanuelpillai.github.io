@@ -23,7 +23,7 @@
 | Name | Description |
 | --- | --- |
 | [ThePrimeagen - YouTube](https://www.youtube.com/c/theprimeagen) | Content on learning Git and Vim motions |
-| [Theo - t3․gg - YouTube](https://www.youtube.com/@t3dotgg) | Keep up to date on latest tech developments |
+| [Theo - t3․gg - YouTube](https://www.youtube.com/@t3dotgg) | Keep up to date on the latest tech developments |
 | [Vim in VS Code - YouTube](https://www.youtube.com/watch?v=IMuFW9as-Dc) | Help you set up VIM motions on VScode |
 
 [Back to Top](#)
