@@ -9,7 +9,7 @@ to easily explain what you did to someone else.
 I think graphical user interfaces are great when you are first learning an application, which is why I started my
 Version Control article with GitHub Desktop, but if you get comfortable with command line tools you can get a lot
 faster
-at your work and easy have someone reproduce what you did without having to point and click.
+at your work and easily have someone reproduce what you did without having to point and click.
 
 ### Getting Good with your Terminal
 
@@ -102,7 +102,7 @@ Package manager for macOS (and Linux). Use it to install software.
 ## Tips for Effective Terminal Use
 
 - Tab to autocomplete (useful for completing file paths)
-- Press the up arrow to recall previously commands
+- Press the up arrow to recall previous commands
 - Use `clear` to clear screen
 - Create aliases for frequently used commands in your `.bashrc` or `.zshrc` file
 

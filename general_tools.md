@@ -25,11 +25,11 @@ will set you up perfectly for this. Another great addition to VScode is its inte
 
 ### What is VIM motions
 
-VIM motions are a set of key bindings that let you quickly navigate and edit text without using your mouse. Basically it allows you to keep you hands on the keyboard at all times. For example with VIM motions you can quickly copy and paste a line of code, delete code inside of parenthesis, and so much more.
+VIM motions are a set of key bindings that let you quickly navigate and edit text without using your mouse. Basically it allows you to keep your hands on the keyboard at all times. For example with VIM motions you can quickly copy and paste a line of code, delete code inside of parenthesis, and so much more.
 
 ### Why Learn VIM motions
 
-Learn VIMotions at first is very tough, despite how intuitive the controls are. It will likely reduce your
+Learn VIM motions at first is very tough, despite how intuitive the controls are. It will likely reduce your
 productivity
 for a bit until you get comfortable. One common argument that people have about why to learn VIM is that it will
 make you a faster programmer. I would argue that the best reason to learn VIM is that it reduces the amount of
@@ -40,7 +40,7 @@ time between when an idea pops into your mind and when you fingers can start to 
 - [Learn Vim Motions](https://www.vim-hero.com/)
 - You can also set up VIM motions in
   [Rstudio](https://stackoverflow.com/questions/47208252/how-to-enable-vim-mode-in-rstudio)
-- I recommend mapping your caps lock key to your escape key to quickly change form normal to insert mode
+- I recommend mapping your caps lock key to your escape key to quickly change from normal to insert mode
 
 ### Autoformat Code in R
 
