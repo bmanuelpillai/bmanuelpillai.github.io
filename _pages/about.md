@@ -16,4 +16,4 @@ Currently I am a research assistant in two groups:
 
 Before starting my PhD, I was a Dr. James A. Ferguson Emerging Infectious Diseases Fellow at the CDC's Center for Forecasting and Outbreak Analytics. There I extended an mpox clade I network model to incorporate mixing by treatment-seeking status and ran large outbreak simulations on Microsoft Azure Batch. My earlier work includes COVID-19 outcomes in people with immune disorders (NIAID) and the effect of COVID-19 nonpharmaceutical interventions on other infections in the US military population.
 
-I received my MPH in Epidemiology from Emory and my BS in Environmental Health from the University of Rochester. I also teach. I have been a teaching assistant for epidemiologic methods and infectious disease courses at Emory, and I teach Environmental Chemistry at Corning Community College.
+I received my MPH in Epidemiology from Emory and my BS in Environmental Health from the University of Rochester. I have also been a teaching assistant for epidemiologic methods and infectious disease courses at Emory.
