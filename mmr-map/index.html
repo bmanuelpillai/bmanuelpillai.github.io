@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>County MMR Coverage</title>
+<meta name="description" content="Interactive map of estimated kindergarten MMR vaccination coverage for every US county, 2024-25.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+  :root { color-scheme: light; --ink: #0b0b0b; --ink-2: #52514e; --surface: #fcfcfb; }
+  html, body, #map { height: 100%; margin: 0; }
+  body { font: 14px/1.4 system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--ink); }
+  #map { background: var(--surface); }
+  .panel { background: #fff; padding: 10px 12px; border-radius: 6px; box-shadow: 0 1px 4px rgb(0 0 0 / .25);
+           max-width: min(290px, calc(100vw - 80px)); max-height: calc(100vh - 40px); overflow-y: auto; }
+  .panel summary { font-weight: 600; cursor: pointer; }
+  .panel .search { display: block; margin: 8px 0 0; color: var(--ink-2); font-size: 12px; }
+  .panel .search input { display: block; box-sizing: border-box; width: 100%; margin-top: 2px; padding: 5px 7px;
+                         font: inherit; font-size: 14px; color: var(--ink); border: 1px solid #c9c8c3; border-radius: 4px; }
+  .panel fieldset { border: 0; margin: 8px 0; padding: 0; }
+  .panel label.layer { display: block; cursor: pointer; }
+  .legend { margin: 6px 0 0; padding: 0; list-style: none; }
+  .legend li { display: flex; align-items: center; gap: 6px; margin: 2px 0; }
+  .swatch { flex: none; width: 14px; height: 14px; border: 1px solid rgb(0 0 0 / .15); }
+  .legend li.greyed { display: block; margin-top: 6px; }
+  .strip { display: flex; gap: 2px; margin-bottom: 2px; }
+  .note { color: var(--ink-2); font-size: 12px; margin: 8px 0 0; }
+  .leaflet-popup-content { font-size: 14px; }
+  .leaflet-popup-content h3 { margin: 0 0 4px; font-size: 15px; }
+  .leaflet-popup-content p { margin: 2px 0; }
+  .leaflet-popup-content .caveat { color: var(--ink-2); font-size: 12px; margin-top: 6px; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="data.js"></script>
+<script>
+const LAYERS = {
+  class: "Estimated coverage",
+  p_class: "Probability coverage is below 95%",
+  source: "Source of the 2024-25 value",
+};
+// Estimate layer: counties whose 90% interval is wider than WIDE points are blended toward
+// grey, so an uncertain estimate doesn't read as firmly as a reported one.
+const WIDE = 10, GREY = [217, 216, 212], BLEND = 0.6;
+const greyed = hex => "rgb(" + [1, 3, 5].map((i, k) =>
+  Math.round(parseInt(hex.slice(i, i + 2), 16) * (1 - BLEND) + GREY[k] * BLEND)).join(",") + ")";
+const fills = Object.fromEntries(LEGEND.map(d => [d.layer + "|" + d.label, d.fill]));
+let layer = "class";
+
+const map = L.map("map", { preferCanvas: true, zoomSnap: 0.25 });
+map.attributionControl.setPrefix(false).addAttribution("County shapes: US Census Bureau");
+
+const round10 = x => (Math.round(x / 10) * 10).toLocaleString("en-US");
+function popup(p) {
+  // Enrollment and vaccinated are estimates: NCES enrollment x model coverage, rounded to 10.
+  const n = p.nces_k < 10
+    ? "<p>Kindergartners (2024-25): fewer than 10</p>"
+    : `<p>Kindergartners (2024-25): ≈ ${round10(p.nces_k)}</p>
+       <p>Vaccinated (est.): ≈ ${round10(p.nces_k * p.coverage / 100)}</p>`;
+  return `<h3>${p.county}, ${p.state}</h3>${n}
+    <p>MMR coverage: <b>${p.coverage.toFixed(1)}%</b> (90% interval ${p.q05.toFixed(1)}–${p.q95.toFixed(1)})</p>
+    ${p.e1_state ? `<p class="caveat">${p.state}'s level is set by CDC SchoolVaxView alone; no county data verifies it.</p>` : ""}`;
+}
+
+function style(f) {
+  const p = f.properties, fill = fills[layer + "|" + p[layer]];
+  return { fillColor: layer === "class" && p.q95 - p.q05 > WIDE ? greyed(fill) : fill,
+           fillOpacity: 0.9, color: "#fcfcfb", weight: 0.3 };
+}
+const byName = new Map();
+const counties = L.geoJSON(COUNTIES, {
+  style,
+  onEachFeature: (f, l) => {
+    const name = `${f.properties.county}, ${f.properties.state}`;
+    byName.set(name.toLowerCase(), l);
+    l.bindPopup(popup(f.properties)).bindTooltip(name, { sticky: true });
+  },
+}).addTo(map);
+// Leave room for the open panel on wide screens so New England isn't hidden under it.
+map.fitBounds(counties.getBounds(), { paddingBottomRight: [window.innerWidth > 600 ? 310 : 0, 0] });
+L.geoJSON(STATES, { interactive: false, style: { fill: false, color: "#52514e", weight: 0.7 } }).addTo(map);
+
+const panel = L.control({ position: "topright" });
+panel.onAdd = () => {
+  const div = L.DomUtil.create("div", "panel");
+  div.innerHTML = `<details ${window.innerWidth > 600 ? "open" : ""}>
+    <summary>Kindergarten MMR coverage by county, 2024-25</summary>
+    <label class="search">Find a county
+      <input type="search" list="county-list" placeholder="e.g. Fulton County, Georgia" autocomplete="off">
+    </label>
+    <datalist id="county-list">${COUNTIES.features.map(f => `${f.properties.county}, ${f.properties.state}`)
+      .sort().map(n => `<option value="${n}">`).join("")}</datalist>
+    <fieldset>${Object.entries(LAYERS).map(([k, v]) =>
+      `<label class="layer"><input type="radio" name="layer" value="${k}" ${k === layer ? "checked" : ""}> ${v}</label>`).join("")}
+    </fieldset>
+    <ul class="legend"></ul>
+    <p class="note">Click a county for details. Estimated standardized school-reported coverage, not population immunity.
+      Every county shows the model estimate; the source layer shows which counties reported in 2024-25.
+      Kindergartners are NCES public + private enrollment; vaccinated = enrollment × estimated coverage.
+      In states whose level rests on CDC data alone, the popup says so.</p>
+    <p class="note">Data: Johns Hopkins county MMR data (v2), The Washington Post, state health departments,
+      CDC SchoolVaxView; enrollment from NCES. Preliminary estimates, not yet peer reviewed.
+      <a href="https://bmanuelpillai.github.io/">Bevin Manuelpillai</a>, Emory University.</p>
+    <p class="note">${VERSION}</p>
+  </details>`;
+  L.DomEvent.disableClickPropagation(div);
+  L.DomEvent.disableScrollPropagation(div);
+  div.querySelector("fieldset").addEventListener("change", e => {
+    layer = e.target.value;
+    counties.setStyle(style);
+    drawLegend(div);
+  });
+  div.querySelector(".search input").addEventListener("change", e => {
+    const l = byName.get(e.target.value.trim().toLowerCase());
+    if (!l) return;
+    map.fitBounds(l.getBounds(), { maxZoom: 8 });
+    l.openPopup();
+  });
+  drawLegend(div);
+  return div;
+};
+function drawLegend(div) {
+  const rows = LEGEND.filter(d => d.layer === layer);
+  const items = rows.map(d => `<li><span class="swatch" style="background:${d.fill}"></span>${d.label}</li>`);
+  if (layer === "class") items.push(`<li class="greyed"><span class="strip">${rows.map(d =>
+    `<span class="swatch" style="background:${greyed(d.fill)}"></span>`).join("")}</span>
+    Greyed: 90% interval wider than ${WIDE} points, so the class is uncertain</li>`);
+  div.querySelector(".legend").innerHTML = items.join("");
+}
+panel.addTo(map);
+</script>
+</body>
+</html>
